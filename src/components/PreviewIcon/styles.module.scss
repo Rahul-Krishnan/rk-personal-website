@@ -1,0 +1,45 @@
+$tileSize: 15vw;
+
+.tile {
+  align-items: center;
+  background: radial-gradient(circle farthest-side at center, white 0%, #444444 100%);
+  border-radius: $tileSize;
+  display: flex;
+  font-family: Helvetica;
+  height: $tileSize;
+  padding: 0.1 * $tileSize;
+  width: $tileSize;
+}
+
+.overlay {
+background: none;
+border-radius: $tileSize;
+bottom: 0vw;
+color: rgba(0, 0, 0, 0);
+display: block;
+height: $tileSize;
+left: 0.2 * $tileSize;
+line-height: $tileSize;
+margin-left: -$tileSize;
+position: relative;
+text-align: center;
+width: $tileSize;
+  &:hover {
+    background: radial-gradient(circle farthest-side at center, black 40%, #555555 100%);
+    cursor: pointer;
+    color: white;
+    opacity: 0.9;
+  }
+}
+
+.name {
+  display: inline-block;
+  font-size: 0.15 * $tileSize;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.image {
+  margin-left: 0.2 * $tileSize;
+  width: 0.6 * $tileSize;
+}

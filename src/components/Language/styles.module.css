@@ -1,0 +1,30 @@
+.logo {
+  height: 8.3vw;
+  width: 8.3vw;
+  margin: 0.83vw 4.15vw; }
+
+.overlay {
+  background: none;
+  bottom: 10.375vw;
+  color: transparent;
+  display: block;
+  height: 9.96vw;
+  line-height: 9.96vw;
+  margin-bottom: -8.3vw;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+  .overlay:hover {
+    background: rgba(40, 40, 40, 0.8);
+    color: white;
+    cursor: pointer; }
+
+.name {
+  display: inline-block;
+  font-size: 4.15vw;
+  line-height: normal;
+  vertical-align: middle; }
+
+@media screen and (min-width: 576px) {
+  .name {
+    font-size: 24px; } }

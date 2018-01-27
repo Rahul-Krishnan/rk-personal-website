@@ -1,0 +1,38 @@
+$logoSize: 8.3vw;
+
+.logo {
+  height: $logoSize;
+  width: $logoSize;
+  margin: (0.1 * $logoSize) (0.5 * $logoSize);
+}
+
+.overlay {
+background: none;
+bottom: 1.25 * $logoSize;
+color: rgba(0, 0, 0, 0);
+display: block;
+height: 1.2 * $logoSize;
+line-height: 1.2 * $logoSize;
+margin-bottom: -$logoSize;
+position: relative;
+text-align: center;
+width: 100%;
+  &:hover {
+    background: rgba(40, 40, 40, 0.8);
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.name {
+  display: inline-block;
+  font-size: 0.5 * $logoSize;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 576px) {
+  .name {
+     font-size: 24px;
+  }
+}

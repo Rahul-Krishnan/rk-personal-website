@@ -1,0 +1,14 @@
+.image {
+  height: 24px;
+  padding-right: 10px;
+  position: relative;
+  top: 7px; }
+
+.item {
+  margin: 20px;
+  margin-left: -5px;
+  text-decoration: none; }
+
+.link {
+  color: #FFFFFF;
+  text-decoration: none; }

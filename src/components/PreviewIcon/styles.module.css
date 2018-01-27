@@ -1,0 +1,38 @@
+.tile {
+  align-items: center;
+  background: radial-gradient(circle farthest-side at center, white 0%, #444444 100%);
+  border-radius: 15vw;
+  display: flex;
+  font-family: Helvetica;
+  height: 15vw;
+  padding: 1.5vw;
+  width: 15vw; }
+
+.overlay {
+  background: none;
+  border-radius: 15vw;
+  bottom: 0vw;
+  color: transparent;
+  display: block;
+  height: 15vw;
+  left: 3vw;
+  line-height: 15vw;
+  margin-left: -15vw;
+  position: relative;
+  text-align: center;
+  width: 15vw; }
+  .overlay:hover {
+    background: radial-gradient(circle farthest-side at center, black 40%, #555555 100%);
+    cursor: pointer;
+    color: white;
+    opacity: 0.9; }
+
+.name {
+  display: inline-block;
+  font-size: 2.25vw;
+  line-height: normal;
+  vertical-align: middle; }
+
+.image {
+  margin-left: 3vw;
+  width: 9vw; }
