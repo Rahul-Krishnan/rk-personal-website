@@ -7,12 +7,14 @@ import pinteresting from '../../Project/assets/pinteresting.png';
 import podcastaway from '../../Project/assets/podcastaway.png';
 import reduxtagram from '../../Project/assets/reduxtagram.png';
 import snacktracker from '../../Project/assets/snacktracker.png';
+import tweetbots from '../../Project/assets/tweetbots.png';
 import arkitHome from '../../Project/assets/arkitHome.png';
 import electionHome from '../../Project/assets/electionHome.png';
 import pinterestingHome from '../../Project/assets/pinterestingHome.png';
 import podcastawayHome from '../../Project/assets/podcastawayHome.png';
 import reduxtagramHome from '../../Project/assets/reduxtagramHome.png';
 import snacktrackerHome from '../../Project/assets/snacktrackerHome.png';
+import tweetbotsHome from '../../Project/assets/tweetbotsHome.png';
 import arkit from '../../Project/assets/arkit.png';
 import html from '../../Language/assets/html.png';
 import css from '../../Language/assets/css.png';
@@ -162,6 +164,23 @@ const data = {
       ],
     },
     {
+      title: 'Tweet Bots',
+      website: 'https://twitter.com/Rahul_Dev_Acct',
+      repo: 'https://github.com/Rahul-Krishnan/TwitterBots',
+      date: 'May 2017',
+      image: tweetbots,
+      homeImage: tweetbotsHome,
+      bulletPoints: [
+        'A bunch of tweet bots, including:',
+        'Basic Bot, i.e. add/remove friends/posts',
+        'Mimic Bot that uses Rita and sample text',
+        'Human Emotions Bot using Google Cloud Vision API',
+        'Story Generation Bot using Tracery',
+        'Retrieve & tweet info from Google Spreadsheets',
+        'Twitter Audio Bot that composes songs',
+      ],
+    },
+    {
       title: 'Podcastaway',
       website: 'https://podcastaway.herokuapp.com',
       repo: 'https://github.com/katherine-sawyer/podcastaway',
@@ -187,6 +206,17 @@ const data = {
       ],
     },
     {
+      title: '2016 Election Tracker',
+      repo: 'https://github.com/rahul-krishnan/Election-Update',
+      date: 'Sep 2016',
+      image: election,
+      homeImage: electionHome,
+      bulletPoints: [
+        'Ruby program that pulls in polling numbers and betting odds from multiple user-defined sources',
+        'Used several Ruby Gems to scrape data and interact with APIs on multiple different election websites',
+      ],
+    },
+    {
       title: 'Reduxtagram',
       website: 'https://reduxtagram-rk.herokuapp.com/',
       repo: 'https://github.com/Rahul-Krishnan/Reduxtagram',
@@ -196,17 +226,6 @@ const data = {
       bulletPoints: [
         'Simple Image board site built using React and Redux',
         'Responsive design with user comments and likes',
-      ],
-    },
-    {
-      title: '2016 Election Tracker',
-      repo: 'https://github.com/rahul-krishnan/Election-Update',
-      date: 'Sep 2016',
-      image: election,
-      homeImage: electionHome,
-      bulletPoints: [
-        'Ruby program that pulls in polling numbers and betting odds from multiple user-defined sources',
-        'Used several Ruby Gems to scrape data and interact with APIs on multiple different election websites',
       ],
     },
   ],

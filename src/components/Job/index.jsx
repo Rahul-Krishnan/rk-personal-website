@@ -11,17 +11,26 @@ class Job extends Component {
 
   expandModal = () => {
     this.setState({ modalOpen: true });
-    this.findTextBox();
-    window.onresize = event => {
-      this.textOverflowCheck();
-    };
+    this.scrollCheck();
+    this.windowSizeCheck();
   };
 
   closeModal = () => {
     this.setState({ modalOpen: false });
   };
 
-  findTextBox = () => {
+  windowSizeCheck = () => {
+    window.onresize = event => {
+      setTimeout(() => {
+        let textBox = document.querySelector('#textBox');
+        if (textBox) {
+          this.textOverflowCheck();
+        }
+      }, 100);
+    };
+  }
+
+  scrollCheck = () => {
     let textBox = document.querySelector('#textBox');
     if (textBox) {
       this.textOverflowCheck();
@@ -30,16 +39,16 @@ class Job extends Component {
       };
     } else {
       setTimeout(() => {
-        this.findTextBox();
+        this.scrollCheck();
       }, 100);
     }
   };
 
   textOverflowCheck = () => {
-    let element = document.querySelector('#textBox');
+    let textBox = document.querySelector('#textBox');
     let overflown =
-      element.scrollTop !== element.scrollHeight - element.offsetHeight &&
-      element.scrollHeight > element.clientHeight;
+      textBox.scrollTop !== textBox.scrollHeight - textBox.offsetHeight &&
+      textBox.scrollHeight > textBox.clientHeight;
     this.setState({ textOverflown: overflown });
   };
 
