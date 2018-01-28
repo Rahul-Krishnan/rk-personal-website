@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import styles from './styles.module.css';
 import data from './assets/data.js';
-import Project from '../Project/';
-import Job from '../Job/';
-import School from '../School/';
-import Language from '../Language/';
-import ContactItem from '../ContactItem/';
+import NavBar from '../NavBar/';
 import HeaderSection from '../HeaderSection/';
-// import ContactTextSection from '../ContactTextSection/'
+import ProjectSection from '../ProjectSection/';
+import ExperienceSection from '../ExperienceSection/';
+import EducationSection from '../EducationSection/';
+import LanguageSection from '../LanguageSection/';
+import FooterSection from '../FooterSection/';
 
 class App extends Component {
   state = {
@@ -21,12 +21,6 @@ class App extends Component {
   componentDidMount() {
     this.toggleToTop();
   }
-
-  range = (start, end) => {
-    return Array(end - start)
-      .fill()
-      .map((_, idx) => start + idx);
-  };
 
   toggleSection = section => {
     let state = {
@@ -79,348 +73,53 @@ class App extends Component {
   };
 
   render() {
-    let projects;
-    let experience;
-    let education;
-    let languages;
-
-    let titleInitial = `${styles.sectionTitle} animated fadeInUp`;
-    let sectionOpen = 'animated zoomIn';
-    let stickyTitleOpen = `${styles.sectionTitle} animated`;
-    let centerTitleCircle = `${styles.sectionTitleCircle} animated fadeInDown`;
-    let centerTitlePentagon = `${styles.sectionTitlePentagon} animated fadeInDown`;
-
-    if (this.state.projects) {
-      projects = (
-        <div className={styles.circleSection}>
-          <div
-            className={centerTitleCircle}
-            onClick={() => {
-              this.toggleSection('projects');
-            }}
-          >
-            {data.sections.projects.title}
-          </div>
-          <div className={sectionOpen}>
-            <div className={styles.iconRow} id="projects">
-              {data.projects
-                .slice(0, 2)
-                .map(project => (
-                  <Project
-                    key={project.title}
-                    title={project.title}
-                    website={project.website}
-                    repo={project.repo}
-                    date={project.date}
-                    bulletPoints={project.bulletPoints}
-                    image={project.image}
-                    homeImage={project.homeImage}
-                    downArrow={data.icons.downArrow}
-                  />
-                ))}
-            </div>
-            <div className={styles.iconRowWide}>
-              {data.projects
-                .slice(2, 4)
-                .map(project => (
-                  <Project
-                    key={project.title}
-                    title={project.title}
-                    website={project.website}
-                    repo={project.repo}
-                    date={project.date}
-                    bulletPoints={project.bulletPoints}
-                    image={project.image}
-                    homeImage={project.homeImage}
-                    downArrow={data.icons.downArrow}
-                  />
-                ))}
-            </div>
-            <div className={styles.iconRow}>
-              {data.projects
-                .slice(4, 6)
-                .map(project => (
-                  <Project
-                    key={project.title}
-                    title={project.title}
-                    website={project.website}
-                    repo={project.repo}
-                    date={project.date}
-                    bulletPoints={project.bulletPoints}
-                    image={project.image}
-                    homeImage={project.homeImage}
-                    downArrow={data.icons.downArrow}
-                  />
-                ))}
-            </div>
-          </div>
-        </div>
-      );
-    } else {
-      projects = (
-        <div className={styles.titleSection} id="projects">
-          <div
-            className={titleInitial}
-            onClick={() => {
-              this.toggleTo('projects');
-            }}
-          >
-            {data.sections.projects.title}
-          </div>
-        </div>
-      );
-    }
-
-    if (this.state.experience) {
-      experience = (
-        <div className={styles.circleSection}>
-          <div
-            className={centerTitlePentagon}
-            onClick={() => {
-              this.toggleSection('experience');
-            }}
-          >
-            {data.sections.experience.title}
-          </div>
-          <div className={sectionOpen}>
-            <div className={styles.iconRow} id="experience">
-              {data.experience
-                .slice(0, 1)
-                .map(job => (
-                  <Job
-                    key={job.company}
-                    company={job.company}
-                    website={job.website}
-                    title={job.title}
-                    location={job.location}
-                    startDate={job.startDate}
-                    endDate={job.endDate}
-                    bulletPoints={job.bulletPoints}
-                    image={job.image}
-                    downArrow={data.icons.downArrow}
-                  />
-                ))}
-            </div>
-            <div className={styles.iconRowMedium}>
-              {data.experience
-                .slice(1, 3)
-                .map(job => (
-                  <Job
-                    key={job.company}
-                    company={job.company}
-                    website={job.website}
-                    title={job.title}
-                    location={job.location}
-                    startDate={job.startDate}
-                    endDate={job.endDate}
-                    bulletPoints={job.bulletPoints}
-                    image={job.image}
-                    downArrow={data.icons.downArrow}
-                  />
-                ))}
-            </div>
-            <div className={styles.iconRow}>
-              {data.experience
-                .slice(3, 5)
-                .map(job => (
-                  <Job
-                    key={job.company}
-                    company={job.company}
-                    website={job.website}
-                    title={job.title}
-                    location={job.location}
-                    startDate={job.startDate}
-                    endDate={job.endDate}
-                    bulletPoints={job.bulletPoints}
-                    image={job.image}
-                    downArrow={data.icons.downArrow}
-                  />
-                ))}
-            </div>
-          </div>
-        </div>
-      );
-    } else {
-      experience = (
-        <div className={styles.titleSection} id="experience">
-          <div
-            className={titleInitial}
-            onClick={() => {
-              this.toggleTo('experience');
-            }}
-          >
-            {data.sections.experience.title}
-          </div>
-        </div>
-      );
-    }
-
-    if (this.state.education) {
-      education = (
-        <div className={styles.titleSection} id="education">
-          <div
-            className={stickyTitleOpen}
-            onClick={() => {
-              this.toggleSection('education');
-            }}
-          >
-            {data.sections.education.title}
-          </div>
-          <div className={sectionOpen}>
-            <div className={styles.iconRow}>
-              {data.education
-                .slice(0, 1)
-                .map(school => (
-                  <School
-                    key={school.name}
-                    name={school.name}
-                    website={school.website}
-                    degree={school.degree}
-                    startDate={school.startDate}
-                    endDate={school.endDate}
-                    bulletPoints={school.bulletPoints}
-                    image={school.image}
-                    downArrow={data.icons.downArrow}
-                  />
-                ))}
-            </div>
-          </div>
-        </div>
-      );
-    } else {
-      education = (
-        <div className={styles.titleSection} id="education">
-          <div
-            className={titleInitial}
-            onClick={() => {
-              this.toggleTo('education');
-            }}
-          >
-            {data.sections.education.title}
-          </div>
-        </div>
-      );
-    }
-
-    if (this.state.languages) {
-      languages = (
-        <div className={styles.titleSection} id="languages">
-          <div
-            className={stickyTitleOpen}
-            onClick={() => {
-              this.toggleSection('languages');
-            }}
-          >
-            {data.sections.languages.title}
-          </div>
-          <div className={sectionOpen}>
-            {this.range(0, Math.ceil(data.languages.length / 6)).map(mult => (
-              <div className={styles.languages}>
-                {data.languages
-                  .slice(mult * 6, (mult + 1) * 6)
-                  .map(language => (
-                    <Language
-                      key={language.name}
-                      name={language.name}
-                      website={language.website}
-                      image={language.image}
-                    />
-                  ))}
-              </div>
-            ))}
-          </div>
-        </div>
-      );
-    } else {
-      languages = (
-        <div className={styles.titleSection} id="languages">
-          <div
-            className={titleInitial}
-            onClick={() => {
-              this.toggleTo('languages');
-            }}
-          >
-            {data.sections.languages.title}
-          </div>
-        </div>
-      );
-    }
-
     return (
       <div className={styles.app}>
-        <div className={styles.navbar} id="navbar">
-          <span
-            className={styles.navbarItem}
-            onClick={() => {
-              this.toggleToTop();
-            }}
-          >
-            {data.sections.header.title}
-          </span>
-          <span
-            className={styles.navbarItem}
-            onClick={() => {
-              this.toggleTo('projects');
-            }}
-          >
-            {data.sections.projects.title}
-          </span>
-          <span
-            className={styles.navbarItem}
-            onClick={() => {
-              this.toggleTo('experience');
-            }}
-          >
-            {data.sections.experience.title}
-          </span>
-          <span
-            className={styles.navbarItem}
-            onClick={() => {
-              this.toggleTo('education');
-            }}
-          >
-            {data.sections.education.title}
-          </span>
-          <span
-            className={styles.navbarItem}
-            onClick={() => {
-              this.toggleTo('languages');
-            }}
-          >
-            {data.sections.languages.title}
-          </span>
-          <span
-            className={styles.navbarItem}
-            onClick={() => {
-              this.toggleTo('contact');
-            }}
-          >
-            {data.sections.contact.title}
-          </span>
+        <NavBar
+          sections={data.sections}
+          toggleTo={this.toggleTo}
+          toggleToTop={this.toggleToTop}
+        />
+        <HeaderSection
+          data={data.sections.header}
+        />
+        <div id="main">
+          <ProjectSection
+            selected={this.state.projects}
+            toggleTo={this.toggleTo}
+            toggleSection={this.toggleSection}
+            title={data.sections.projects.title}
+            data={data.projects}
+            downArrow={data.icons.downArrow}
+          />
+          <ExperienceSection
+            selected={this.state.experience}
+            toggleTo={this.toggleTo}
+            toggleSection={this.toggleSection}
+            title={data.sections.experience.title}
+            data={data.experience}
+            downArrow={data.icons.downArrow}
+          />
+          <EducationSection
+            selected={this.state.education}
+            toggleTo={this.toggleTo}
+            toggleSection={this.toggleSection}
+            title={data.sections.education.title}
+            data={data.education}
+            downArrow={data.icons.downArrow}
+          />
+          <LanguageSection
+            selected={this.state.languages}
+            toggleTo={this.toggleTo}
+            toggleSection={this.toggleSection}
+            title={data.sections.languages.title}
+            data={data.languages}
+          />
         </div>
-        <HeaderSection data={data.sections.header} />
-        <div className={styles.body} id="main">
-          {projects}
-          {experience}
-          {education}
-          {languages}
-        </div>
-        <footer className={styles.footer}>
-          <div className={styles.footerTitle} id="contact">
-            {data.sections.contact.title}
-          </div>
-          {data.contactItem.map(contactItem => (
-            <ContactItem
-              key={contactItem.type}
-              type={contactItem.type}
-              details={contactItem.details}
-              subject={contactItem.subject}
-              body={contactItem.body}
-              image={contactItem.image}
-            />
-          ))}
-          {/* <ContactTextSection /> */}
-        </footer>
+        <FooterSection
+          title={data.sections.contact.title}
+          data={data.contact}
+        />
       </div>
     );
   }

@@ -320,7 +320,7 @@ const data = {
       website: 'https://www.columbia.edu',
     },
   ],
-  contactItem: [
+  contact: [
     {
       type: 'email',
       details: 'rk2211@gmail.com',

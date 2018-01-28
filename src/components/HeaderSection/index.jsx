@@ -3,16 +3,21 @@ import styles from './styles.module.css';
 
 class HeaderSection extends Component {
   componentDidMount() {
-    let overlay = document.querySelector(`#overlay`);
+    this.setOverlayMovement();
+  }
 
+  setOverlayMovement = () => {
+    let overlay = document.querySelector(`#overlay`);
+    let background = document.querySelector(`#background`);
     overlay.onmousemove = event => {
-      const windowWidth = window.innerWidth / 5;
-      const windowHeight = window.innerHeight / 5;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
 
       const mouseX = event.clientX / windowWidth;
       const mouseY = event.clientY / windowHeight;
 
-      overlay.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+      overlay.style.transform = `translate3d(-${10 * mouseX}%, -${10 * mouseY}%, 0)`;
+      background.style.transform = `translate3d(${1 * mouseX}%, ${1 * mouseY}%, 0)`;
     };
   }
 

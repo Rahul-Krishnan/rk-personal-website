@@ -7,10 +7,10 @@
   text-align: center; }
 
 .background {
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
   height: 120%;
-  left: 0;
+  right: 0;
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@
   border-radius: 40vw;
   height: 40vw;
   margin-top: 15vh;
-  max-height: 400px; }
+  max-height: 350px; }
 
 .title {
   font-family: 'Pacifico', cursive;

@@ -1,0 +1,19 @@
+.footer {
+  background-color: sienna;
+  color: #FFFFFF;
+  padding: 24px;
+  text-align: center;
+}
+
+.footerTitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 5vw;
+  padding: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  .footerTitle {
+     font-size: 36px;
+  }
+}

@@ -1,0 +1,76 @@
+.circleSection {
+  margin-top: -45vw;
+  z-index: -1;
+}
+
+.titleSection {
+  margin: 2vw 0;
+  padding: 2vw 0;
+}
+
+.sectionTitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 5vw;
+  padding: 16px;
+  text-align: center;
+
+  &:hover {
+    background: rgba(40, 40, 40, 0.8);
+    cursor: pointer;
+  }
+}
+
+.sectionTitleCircle {
+  border-radius: 40vw;
+  display: block;
+  font-family: 'Pacifico', cursive;
+  font-size: 5vw;
+  height: 40vw;
+  line-height: 40vw;
+  margin: 0 auto;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  top: 62.5vw;
+  width: 40vw;
+  z-index: 1;
+
+  &:hover {
+    background: rgba(40, 40, 40, 0.8);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .sectionTitle {
+     font-size: 36px;
+  }
+
+  .sectionTitleCircle {
+     font-size: 36px;
+  }
+}
+
+.iconRow {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5vw;
+  width: 90vw;
+  z-index: -1;
+}
+
+.iconRowMedium {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 10vw 7vw 10vw;
+  width: 80vw;
+  z-index: -1;
+}
+
+.iconRowWide {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 10vw;
+  width: 80vw;
+  z-index: -1;
+}

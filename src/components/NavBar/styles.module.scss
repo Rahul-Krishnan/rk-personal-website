@@ -1,0 +1,26 @@
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbarItem {
+  display: inline-flex;
+  font-size: 2vw;
+  padding: 8px;
+
+  &:hover {
+    background: rgba(100, 100, 100, 0.8);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .navbarItem {
+     font-size: 36px;
+  }
+}
