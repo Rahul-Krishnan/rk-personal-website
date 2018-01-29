@@ -1,19 +1,20 @@
-$logoSize: 8.3vw;
+$logoSizeVw: 8.3vw;
+$logoSizePx: 60px;
 
 .logo {
-  height: $logoSize;
-  width: $logoSize;
-  margin: (0.1 * $logoSize) (0.5 * $logoSize);
+  height: $logoSizeVw;
+  width: $logoSizeVw;
+  margin: (0.1 * $logoSizeVw) (0.5 * $logoSizeVw);
 }
 
 .overlay {
 background: none;
-bottom: 1.25 * $logoSize;
+bottom: 1.25 * $logoSizeVw;
 color: rgba(0, 0, 0, 0);
 display: block;
-height: 1.2 * $logoSize;
-line-height: 1.2 * $logoSize;
-margin-bottom: -$logoSize;
+height: 1.2 * $logoSizeVw;
+line-height: 1.2 * $logoSizeVw;
+margin-bottom: -$logoSizeVw;
 position: relative;
 text-align: center;
 width: 100%;
@@ -26,13 +27,26 @@ width: 100%;
 
 .name {
   display: inline-block;
-  font-size: 0.5 * $logoSize;
+  font-size: 0.3 * $logoSizeVw;
   line-height: normal;
   vertical-align: middle;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 720px) {
+  .logo {
+    height: $logoSizePx;
+    width: $logoSizePx;
+    margin: (0.1 * $logoSizePx) (0.5 * $logoSizePx);
+  }
+
+  .overlay {
+  bottom: 1.25 * $logoSizePx;
+  height: 1.2 * $logoSizePx;
+  line-height: 1.2 * $logoSizePx;
+  margin-bottom: -$logoSizePx;
+  }
+
   .name {
-     font-size: 24px;
+    font-size: 0.3 * $logoSizePx;
   }
 }

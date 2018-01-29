@@ -9,7 +9,7 @@
 .sectionTitle {
   font-family: 'Pacifico', cursive;
   font-size: 5vw;
-  padding: 16px;
+  padding: 2.2vw;
   text-align: center; }
   .sectionTitle:hover {
     background: rgba(40, 40, 40, 0.8);
@@ -23,7 +23,7 @@
   height: 40vw;
   line-height: 40vw;
   margin: 0 auto;
-  padding: 16px;
+  padding: 2.2vw;
   position: relative;
   text-align: center;
   top: 67vw;
@@ -33,15 +33,10 @@
     background: rgba(40, 40, 40, 0.8);
     cursor: pointer; }
 
-@media screen and (min-width: 720px) {
-  .sectionTitle {
-    font-size: 36px; }
-  .sectionTitlePentagon {
-    font-size: 36px; } }
-
 .iconRow {
   display: flex;
   justify-content: space-evenly;
+  margin: 0 auto;
   padding: 5vw;
   width: 90vw;
   z-index: -1; }
@@ -49,6 +44,7 @@
 .iconRowMedium {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   padding: 2vw 10vw 7vw 10vw;
   width: 80vw;
   z-index: -1; }
@@ -56,6 +52,32 @@
 .iconRowWide {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   padding: 3vw 10vw;
   width: 80vw;
   z-index: -1; }
+
+@media screen and (min-width: 720px) {
+  .circleSection {
+    margin-top: -324px; }
+  .sectionTitle {
+    font-size: 36px;
+    padding: 15.84px; }
+  .sectionTitlePentagon {
+    border-radius: 288px;
+    font-size: 36px;
+    height: 288px;
+    line-height: 288px;
+    padding: 15.84px;
+    top: 482.4px;
+    width: 288px; }
+  .iconRow {
+    justify-content: space-evenly;
+    padding: 36px;
+    width: 648px; }
+  .iconRowMedium {
+    padding: 14.4px 72px 50.4px 72px;
+    width: 576px; }
+  .iconRowWide {
+    padding: 3vw 10vw;
+    width: 576px; } }
