@@ -1,29 +1,30 @@
-$tileSize: 15vw;
+$tileSizeVw: 15vw;
+$tileSizePx: 108px;
 
 .tile {
   align-items: center;
   background: radial-gradient(circle farthest-side at center, white 0%, #444444 100%);
-  border-radius: $tileSize;
+  border-radius: $tileSizeVw;
   display: flex;
   font-family: Helvetica;
-  height: $tileSize;
-  padding: 0.1 * $tileSize;
-  width: $tileSize;
+  height: $tileSizeVw;
+  padding: 0.1 * $tileSizeVw;
+  width: $tileSizeVw;
 }
 
 .overlay {
 background: none;
-border-radius: $tileSize;
+border-radius: $tileSizeVw;
 bottom: 0vw;
 color: rgba(0, 0, 0, 0);
 display: block;
-height: $tileSize;
-left: 0.2 * $tileSize;
-line-height: $tileSize;
-margin-left: -$tileSize;
+height: $tileSizeVw;
+left: 0.2 * $tileSizeVw;
+line-height: $tileSizeVw;
+margin-left: -$tileSizeVw;
 position: relative;
 text-align: center;
-width: $tileSize;
+width: $tileSizeVw;
   &:hover {
     background: radial-gradient(circle farthest-side at center, black 40%, #555555 100%);
     cursor: pointer;
@@ -34,12 +35,39 @@ width: $tileSize;
 
 .name {
   display: inline-block;
-  font-size: 0.15 * $tileSize;
+  font-size: 0.15 * $tileSizeVw;
   line-height: normal;
   vertical-align: middle;
 }
 
 .image {
-  margin-left: 0.2 * $tileSize;
-  width: 0.6 * $tileSize;
+  margin-left: 0.2 * $tileSizeVw;
+  width: 0.6 * $tileSizeVw;
+}
+
+@media screen and (min-width: 720px) {
+  .tile {
+    border-radius: $tileSizePx;
+    height: $tileSizePx;
+    padding: 0.1 * $tileSizePx;
+    width: $tileSizePx;
+  }
+
+  .overlay {
+  border-radius: $tileSizePx;
+  height: $tileSizePx;
+  left: 0.2 * $tileSizePx;
+  line-height: $tileSizePx;
+  margin-left: -$tileSizePx;
+  width: $tileSizePx;
+  }
+
+  .name {
+    font-size: 0.15 * $tileSizePx;
+  }
+
+  .image {
+    margin-left: 0.2 * $tileSizePx;
+    width: 0.6 * $tileSizePx;
+  }
 }

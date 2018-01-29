@@ -36,3 +36,22 @@
 .image {
   margin-left: 3vw;
   width: 9vw; }
+
+@media screen and (min-width: 720px) {
+  .tile {
+    border-radius: 108px;
+    height: 108px;
+    padding: 10.8px;
+    width: 108px; }
+  .overlay {
+    border-radius: 108px;
+    height: 108px;
+    left: 21.6px;
+    line-height: 108px;
+    margin-left: -108px;
+    width: 108px; }
+  .name {
+    font-size: 16.2px; }
+  .image {
+    margin-left: 21.6px;
+    width: 64.8px; } }

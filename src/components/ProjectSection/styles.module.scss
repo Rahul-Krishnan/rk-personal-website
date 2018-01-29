@@ -1,0 +1,109 @@
+$baseSizeVw: 10vw;
+$baseSizePx: 72px;
+
+.circleSection {
+  margin-top: -4.5 * $baseSizeVw;
+  z-index: -1;
+}
+
+.titleSection {
+  margin: 2vw 0;
+  padding: 2vw 0;
+}
+
+.sectionTitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 0.5 * $baseSizeVw;
+  padding: 0.22 * $baseSizeVw;
+  text-align: center;
+
+  &:hover {
+    background: rgba(40, 40, 40, 0.8);
+    cursor: pointer;
+  }
+}
+
+.sectionTitleCircle {
+  border-radius: 4 * $baseSizeVw;
+  display: block;
+  font-family: 'Pacifico', cursive;
+  font-size: 0.5 * $baseSizeVw;
+  height: 4 * $baseSizeVw;
+  line-height: 4 * $baseSizeVw;
+  margin: 0 auto;
+  padding: 0.22 * $baseSizeVw;
+  position: relative;
+  text-align: center;
+  top: 6.25 * $baseSizeVw;
+  width: 4 * $baseSizeVw;
+  z-index: 1;
+
+  &:hover {
+    background: rgba(40, 40, 40, 0.8);
+    cursor: pointer;
+  }
+}
+
+.iconRow {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 0.5 * $baseSizeVw;
+  width: 9 * $baseSizeVw;
+  z-index: -1;
+}
+
+.iconRowMedium {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0.2 * $baseSizeVw $baseSizeVw 0.7 * $baseSizeVw $baseSizeVw;
+  width: 8 * $baseSizeVw;
+  z-index: -1;
+}
+
+.iconRowWide {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0.3 * $baseSizeVw $baseSizeVw;
+  width: 8 * $baseSizeVw;
+  z-index: -1;
+}
+
+@media screen and (min-width: 720px) {
+  .circleSection {
+    margin-top: -4.5 * $baseSizePx;
+  }
+
+  .sectionTitle {
+    font-size: 0.5 * $baseSizePx;
+    padding: 0.22 * $baseSizePx;
+  }
+
+  .sectionTitleCircle {
+    border-radius: 4 * $baseSizePx;
+    font-size: 0.5 * $baseSizePx;
+    height: 4 * $baseSizePx;
+    line-height: 4 * $baseSizePx;
+    padding: 0.22 * $baseSizePx;
+    top: 6.25 * $baseSizePx;
+    width: 4 * $baseSizePx;
+  }
+
+  .iconRow {
+    justify-content: space-evenly;
+    padding: 0.5 * $baseSizePx;
+    width: 9 * $baseSizePx;
+  }
+
+  .iconRowMedium {
+    padding: 0.2 * $baseSizePx $baseSizePx 0.7 * $baseSizePx $baseSizePx;
+    width: 8 * $baseSizePx;
+  }
+
+  .iconRowWide {
+    padding: 0.3 * $baseSizePx $baseSizePx;
+    width: 8 * $baseSizePx;
+  }
+}
