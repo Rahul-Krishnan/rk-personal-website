@@ -126,12 +126,15 @@ class Project extends Component {
               Go Back
             </div>
             {this.state.textOverflown && (
-              <img
-                className={styles.more}
-                alt="scrollDown"
-                src={downArrow}
-                onClick={this.scrollDown}
-              />
+              <div>
+                <div className={styles.backButtonAdjustment}/>
+                <img
+                  className={styles.more}
+                  alt="scrollDown"
+                  src={downArrow}
+                  onClick={this.scrollDown}
+                />
+              </div>
             )}
           </div>
         </Modal>

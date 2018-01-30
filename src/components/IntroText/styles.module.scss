@@ -35,25 +35,9 @@ $wordHeightPx: 36px;
   white-space: nowrap;
   top: 0;
   left: 0;
-
-  /*animation*/
-  -webkit-animation:move 10s;
-     -moz-animation:move 10s;
-      -ms-animation:move 10s;
-       -o-animation:move 10s;
-          animation:move 10s;
-  /*animation-iteration-count*/
-  -webkit-animation-iteration-count:infinite;
-     -moz-animation-iteration-count:infinite;
-      -ms-animation-iteration-count:infinite;
-       -o-animation-iteration-count:infinite;
-          animation-iteration-count:infinite;
-  /*animation-delay*/
-  -webkit-animation-delay:2s;
-     -moz-animation-delay:2s;
-      -ms-animation-delay:2s;
-       -o-animation-delay:2s;
-          animation-delay:2s;
+  animation:move 10s;
+  animation-iteration-count:infinite;
+  animation-delay:2s;
 }
 
 .word {
@@ -74,63 +58,22 @@ $wordHeightPx: 36px;
 
 @media screen and (min-width: 720px) {
   .container {
-    display: flex;
     font-size: 3/5 * $wordHeightPx;
     height: $wordHeightPx;
-    margin: 0 auto;
     padding-left: 2 * $wordHeightPx;
     padding-top: 3/5 * $wordHeightPx;
-    position: relative;
-    text-align: center;
     width: 10 * $wordHeightPx;
   }
   .anchor {
     height: $wordHeightPx;
-    left: 0;
-    margin: 0;
-    position: relative;
-    top: 0;
     width: 8/5 * $wordHeightPx;
   }
   .rotateSection {
-    float: left;
-    overflow: hidden;
-    position: relative;
     height: $wordHeightPx;
-    top: 0;
-  }
-
-  .cycleWords {
-    display: inline-block;
-    color: lime;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-
-    /*animation*/
-    -webkit-animation:move 10s;
-       -moz-animation:move 10s;
-        -ms-animation:move 10s;
-         -o-animation:move 10s;
-            animation:move 10s;
-    /*animation-iteration-count*/
-    -webkit-animation-iteration-count:infinite;
-       -moz-animation-iteration-count:infinite;
-        -ms-animation-iteration-count:infinite;
-         -o-animation-iteration-count:infinite;
-            animation-iteration-count:infinite;
-    /*animation-delay*/
-    -webkit-animation-delay:2s;
-       -moz-animation-delay:2s;
-        -ms-animation-delay:2s;
-         -o-animation-delay:2s;
-            animation-delay:2s;
   }
 
   .word {
     height: $wordHeightPx;
-    text-align: left;
   }
 
   @keyframes move {

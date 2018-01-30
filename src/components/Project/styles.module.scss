@@ -28,7 +28,6 @@ a {
 .overlay {
   align-items: center;
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
   background-color: rgba(40, 40, 40, 0.7);
   bottom: 0;
   display: flex;
@@ -138,4 +137,9 @@ a {
   &:hover {
     cursor: pointer;
   }
+}
+
+.backButtonAdjustment {
+  display: inline-block;
+  padding: 8px;
 }

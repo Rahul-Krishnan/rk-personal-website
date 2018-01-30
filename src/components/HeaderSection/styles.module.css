@@ -1,6 +1,7 @@
 .header {
   color: #FFFFFF;
-  height: 90vh;
+  height: 85vh;
+  max-height: 120vw;
   overflow: hidden;
   padding: 5vw;
   position: relative;
@@ -8,7 +9,6 @@
 
 .background {
   filter: blur(2px);
-  -webkit-filter: blur(2px);
   height: 120%;
   right: 0;
   opacity: 0.5;
