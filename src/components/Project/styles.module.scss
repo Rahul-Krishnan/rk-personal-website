@@ -42,6 +42,8 @@ a {
 .topSection {
   height: 100%;
   overflow: auto;
+  overflow-y: overlay;
+  padding: 0 8px;
 }
 
 .closeButton {
