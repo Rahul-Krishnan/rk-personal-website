@@ -83,6 +83,8 @@ a {
   position: absolute;
   right: 45px;
   width: 24px; }
+  .more:hover {
+    cursor: pointer; }
 
 .bottomSection {
   bottom: 0;

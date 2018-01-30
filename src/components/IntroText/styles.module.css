@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  font-size: 3vw;
+  height: 5vw;
+  margin: 0 auto;
+  padding-left: 10vw;
+  padding-top: 3vw;
+  position: relative;
+  text-align: center;
+  width: 50vw; }
+
+.anchor {
+  height: 5vw;
+  left: 0;
+  margin: 0;
+  position: relative;
+  top: 0;
+  width: 8vw; }
+
+.rotateSection {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 5vw;
+  top: 0; }
+
+.cycleWords {
+  display: inline-block;
+  color: lime;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  /*animation*/
+  -webkit-animation: move 10s;
+  -moz-animation: move 10s;
+  -ms-animation: move 10s;
+  -o-animation: move 10s;
+  animation: move 10s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /*animation-delay*/
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.word {
+  height: 5vw;
+  text-align: left; }
+
+@keyframes move {
+  0% {
+    top: 0; }
+  12.5% {
+    top: -5vw; }
+  25% {
+    top: -10vw; }
+  37.5% {
+    top: -15vw; }
+  50% {
+    top: -20vw; }
+  62.5% {
+    top: -25vw; }
+  75% {
+    top: -30vw; }
+  87.5% {
+    top: -35vw; } }
+
+@media screen and (min-width: 720px) {
+  .container {
+    display: flex;
+    font-size: 21.6px;
+    height: 36px;
+    margin: 0 auto;
+    padding-left: 72px;
+    padding-top: 21.6px;
+    position: relative;
+    text-align: center;
+    width: 360px; }
+  .anchor {
+    height: 36px;
+    left: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 57.6px; }
+  .rotateSection {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 36px;
+    top: 0; }
+  .cycleWords {
+    display: inline-block;
+    color: lime;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    /*animation*/
+    -webkit-animation: move 10s;
+    -moz-animation: move 10s;
+    -ms-animation: move 10s;
+    -o-animation: move 10s;
+    animation: move 10s;
+    /*animation-iteration-count*/
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    /*animation-delay*/
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s; }
+  .word {
+    height: 36px;
+    text-align: left; }
+  @keyframes move {
+    0% {
+      top: 0; }
+    12.5% {
+      top: -36px; }
+    25% {
+      top: -72px; }
+    37.5% {
+      top: -108px; }
+    50% {
+      top: -144px; }
+    62.5% {
+      top: -180px; }
+    75% {
+      top: -216px; }
+    87.5% {
+      top: -252px; } } }

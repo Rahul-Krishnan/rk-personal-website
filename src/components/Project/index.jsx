@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './styles.module.css';
 import PreviewIcon from '../PreviewIcon/';
 import Modal from 'react-modal';
+import $ from 'jquery';
 
 class Project extends Component {
   state = {
@@ -58,6 +59,10 @@ class Project extends Component {
       textBox.scrollHeight > textBox.clientHeight;
     this.setState({ textOverflown: overflown });
   };
+
+  scrollDown = () => {
+    $("#textBox").animate({ scrollTop: $('#textBox').prop("scrollHeight")}, 1000);
+  }
 
   render() {
     let {
@@ -121,7 +126,12 @@ class Project extends Component {
               Go Back
             </div>
             {this.state.textOverflown && (
-              <img className={styles.more} alt="scrollDown" src={downArrow} />
+              <img
+                className={styles.more}
+                alt="scrollDown"
+                src={downArrow}
+                onClick={this.scrollDown}
+              />
             )}
           </div>
         </Modal>

@@ -21,7 +21,7 @@
 
 .name {
   display: inline-block;
-  font-size: 2.49vw;
+  font-size: 2.905vw;
   line-height: normal;
   vertical-align: middle; }
 
@@ -36,4 +36,4 @@
     line-height: 72px;
     margin-bottom: -60px; }
   .name {
-    font-size: 18px; } }
+    font-size: 21px; } }

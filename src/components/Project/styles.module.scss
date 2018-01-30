@@ -112,6 +112,11 @@ a {
   position: absolute;
   right: 45px;
   width: 24px;
+  z-index: 3;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .bottomSection {

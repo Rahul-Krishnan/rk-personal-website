@@ -93,7 +93,10 @@ a {
   height: 24px;
   position: absolute;
   right: 45px;
-  width: 24px; }
+  width: 24px;
+  z-index: 3; }
+  .more:hover {
+    cursor: pointer; }
 
 .bottomSection {
   bottom: 0;

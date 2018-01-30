@@ -27,7 +27,7 @@ width: 100%;
 
 .name {
   display: inline-block;
-  font-size: 0.3 * $logoSizeVw;
+  font-size: 0.35 * $logoSizeVw;
   line-height: normal;
   vertical-align: middle;
 }
@@ -47,6 +47,6 @@ width: 100%;
   }
 
   .name {
-    font-size: 0.3 * $logoSizePx;
+    font-size: 0.35 * $logoSizePx;
   }
 }
