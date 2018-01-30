@@ -6,17 +6,24 @@ import Modal from 'react-modal';
 class Job extends Component {
   state = {
     modalOpen: false,
+    modalStyle: '',
     textOverflown: false,
   };
 
   expandModal = () => {
-    this.setState({ modalOpen: true });
+    this.setState({
+      modalStyle: `${styles.modal} animated zoomIn`,
+      modalOpen: true,
+    });
     this.scrollCheck();
     this.windowSizeCheck();
   };
 
   closeModal = () => {
-    this.setState({ modalOpen: false });
+    this.setState({
+      modalStyle: `${styles.modal} animated zoomOut`,
+      modalOpen: false,
+    });
   };
 
   windowSizeCheck = () => {
@@ -64,6 +71,7 @@ class Job extends Component {
       website,
       downArrow,
     } = this.props;
+
     return (
       <div>
         <div onClick={this.expandModal}>
@@ -74,7 +82,7 @@ class Job extends Component {
           ariaHideApp={false}
           closeTimeoutMS={250}
           overlayClassName={styles.overlay}
-          className={styles.modal}
+          className={this.state.modalStyle}
         >
           <div
             className={styles.backgroundImage}

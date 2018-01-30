@@ -1,26 +1,26 @@
 .tile {
   align-items: center;
   background: radial-gradient(circle farthest-side at center, white 0%, #444444 100%);
-  border-radius: 15vw;
+  border-radius: 20vw;
   display: flex;
   font-family: Helvetica;
-  height: 15vw;
-  padding: 1.5vw;
-  width: 15vw; }
+  height: 20vw;
+  padding: 2vw;
+  width: 20vw; }
 
 .overlay {
   background: none;
-  border-radius: 15vw;
+  border-radius: 20vw;
   bottom: 0vw;
   color: transparent;
   display: block;
-  height: 15vw;
-  left: 3vw;
-  line-height: 15vw;
-  margin-left: -15vw;
+  height: 20vw;
+  left: 4vw;
+  line-height: 20vw;
+  margin-left: -20vw;
   position: relative;
   text-align: center;
-  width: 15vw; }
+  width: 20vw; }
   .overlay:hover {
     background: radial-gradient(circle farthest-side at center, black 40%, #555555 100%);
     cursor: pointer;
@@ -29,29 +29,29 @@
 
 .name {
   display: inline-block;
-  font-size: 2.25vw;
+  font-size: 3vw;
   line-height: normal;
   vertical-align: middle; }
 
 .image {
-  margin-left: 3vw;
-  width: 9vw; }
+  margin-left: 4vw;
+  width: 12vw; }
 
 @media screen and (min-width: 720px) {
   .tile {
-    border-radius: 108px;
-    height: 108px;
-    padding: 10.8px;
-    width: 108px; }
+    border-radius: 144px;
+    height: 144px;
+    padding: 14.4px;
+    width: 144px; }
   .overlay {
-    border-radius: 108px;
-    height: 108px;
-    left: 21.6px;
-    line-height: 108px;
-    margin-left: -108px;
-    width: 108px; }
+    border-radius: 144px;
+    height: 144px;
+    left: 28.8px;
+    line-height: 144px;
+    margin-left: -144px;
+    width: 144px; }
   .name {
-    font-size: 16.2px; }
+    font-size: 21.6px; }
   .image {
-    margin-left: 21.6px;
-    width: 64.8px; } }
+    margin-left: 28.8px;
+    width: 86.4px; } }

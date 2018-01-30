@@ -26,7 +26,7 @@
   padding: 2.2vw;
   position: relative;
   text-align: center;
-  top: 62.5vw;
+  top: 68vw;
   width: 40vw;
   z-index: 1; }
   .sectionTitleCircle:hover {
@@ -37,15 +37,7 @@
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  padding: 5vw;
-  width: 90vw;
-  z-index: -1; }
-
-.iconRowMedium {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 2vw 10vw 7vw 10vw;
+  padding: 5vw 10vw;
   width: 80vw;
   z-index: -1; }
 
@@ -53,8 +45,8 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 3vw 10vw;
-  width: 80vw;
+  padding: 0vw 4vw;
+  width: 92vw;
   z-index: -1; }
 
 @media screen and (min-width: 720px) {
@@ -69,15 +61,12 @@
     height: 288px;
     line-height: 288px;
     padding: 15.84px;
-    top: 450px;
+    top: 489.6px;
     width: 288px; }
   .iconRow {
     justify-content: space-evenly;
-    padding: 36px;
-    width: 648px; }
-  .iconRowMedium {
-    padding: 14.4px 72px 50.4px 72px;
+    padding: 36px 72px;
     width: 576px; }
   .iconRowWide {
-    padding: 21.6px 72px;
-    width: 576px; } }
+    padding: 0px 28.8px;
+    width: 662.4px; } }

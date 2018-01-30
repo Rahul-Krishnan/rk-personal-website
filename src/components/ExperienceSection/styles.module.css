@@ -26,7 +26,7 @@
   padding: 2.2vw;
   position: relative;
   text-align: center;
-  top: 67vw;
+  top: 75vw;
   width: 40vw;
   z-index: 1; }
   .sectionTitlePentagon:hover {
@@ -37,24 +37,16 @@
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  padding: 5vw;
-  width: 90vw;
+  padding: 5vw 0vw 0vw 0vw;
+  width: 100vw;
   z-index: -1; }
 
 .iconRowMedium {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 2vw 10vw 7vw 10vw;
-  width: 80vw;
-  z-index: -1; }
-
-.iconRowWide {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 3vw 10vw;
-  width: 80vw;
+  padding: 0vw 6vw 7vw 6vw;
+  width: 88vw;
   z-index: -1; }
 
 @media screen and (min-width: 720px) {
@@ -69,15 +61,11 @@
     height: 288px;
     line-height: 288px;
     padding: 15.84px;
-    top: 482.4px;
+    top: 540px;
     width: 288px; }
   .iconRow {
-    justify-content: space-evenly;
-    padding: 36px;
-    width: 648px; }
+    padding: 50.4px 0px 0px 0px;
+    width: 720px; }
   .iconRowMedium {
-    padding: 14.4px 72px 50.4px 72px;
-    width: 576px; }
-  .iconRowWide {
-    padding: 3vw 10vw;
-    width: 576px; } }
+    padding: 0px 43.2px 36px 43.2px;
+    width: 633.6px; } }

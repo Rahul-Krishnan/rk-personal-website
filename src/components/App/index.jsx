@@ -37,13 +37,13 @@ class App extends Component {
     this.doScroll(section);
     setTimeout(() => {
       this.doScroll(section);
-    }, 700);
+    }, 800);
   };
 
   doScroll = section => {
     $('html,body').animate(
       {
-        scrollTop: $(`#${section}`).offset().top,
+        scrollTop: $(`#${section}`).offset().top - 20,
       },
       500,
     );
