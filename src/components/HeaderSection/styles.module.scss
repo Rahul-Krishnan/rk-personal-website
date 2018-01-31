@@ -1,15 +1,15 @@
 .header {
   color: #FFFFFF;
   height: 90vh;
+  max-height: 120vw;
   overflow: hidden;
-  padding: 24px;
+  padding: 2vw;
   position: relative;
   text-align: center;
 }
 
 .background {
   filter: blur(2px);
-  -webkit-filter: blur(2px);
   height: 120%;
   right: 0;
   opacity: 0.5;
@@ -19,6 +19,7 @@
 }
 
 .overlay {
+  animation: driftDown 15s infinite, driftSideways 5s infinite;
   background-color: none;
   height: 120%;
   left: 0;
@@ -27,6 +28,24 @@
   top: 0;
   width: 120%;
   z-index: 1;
+}
+
+@keyframes driftDown {
+  0%, 100% {
+    top: -12vh;
+  }
+  50% {
+    top: 3vh;
+  }
+}
+
+@keyframes driftSideways {
+  0%, 100% {
+    left: 1vw;
+  }
+  50% {
+    left: 4vw;
+  }
 }
 
 .profilePic {
@@ -39,28 +58,12 @@
 .title {
   font-family: 'Pacifico', cursive;
   font-size: 5vw;
-  margin: 0 auto;
+  margin: 1.5vw auto;
   width: 40vw;
 }
 
 @media screen and (min-width: 720px) {
   .title {
      font-size: 36px;
-  }
-}
-
-.canvas {
-  margin: -5vw auto;
-  margin-bottom: -10vw;
-  width: 75%;
-}
-
-.intro {
-  font-size: 2.5vw;
-}
-
-@media screen and (min-width: 720px) {
-  .intro {
-     font-size: 18px;
   }
 }

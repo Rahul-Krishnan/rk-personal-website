@@ -25,7 +25,6 @@ a {
 .overlay {
   align-items: center;
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
   background-color: rgba(40, 40, 40, 0.7);
   bottom: 0;
   display: flex;
@@ -38,7 +37,9 @@ a {
 
 .topSection {
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  overflow-y: overlay;
+  padding: 0 8px; }
 
 .closeButton {
   background-color: sienna;
@@ -83,6 +84,8 @@ a {
   position: absolute;
   right: 45px;
   width: 24px; }
+  .more:hover {
+    cursor: pointer; }
 
 .bottomSection {
   bottom: 0;
@@ -100,3 +103,7 @@ a {
   padding: 10px; }
   .backButton:hover {
     cursor: pointer; }
+
+.backButtonAdjustment {
+  display: inline-block;
+  padding: 8px; }

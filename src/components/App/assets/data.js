@@ -59,8 +59,19 @@ const data = {
       overlay: overlay,
       profilePic: profilePic,
       title: 'Rahul Krishnan',
-      intro:
-        'Full-stack Web Developer with a focus on React and Rails. Former investment professional with specialization in structured derivatives. Have experience both in small and large work groups, from startup environments to well-established multinational firms.',
+      intro: {
+        anchor: 'I am',
+        cycleWords: [
+          'a full-stack Web Developer',
+          'focused on React and Rails',
+          'multidisciplinary',
+          'a former trader',
+          'into adventure RPGs',
+          'a 2nd degree Black Belt',
+          'an amateur magician',
+          'a guinea pig fan',
+        ],
+      },
     },
     projects: {
       title: 'Projects',
@@ -142,15 +153,6 @@ const data = {
   ],
   projects: [
     {
-      title: 'AR Kit',
-      website: 'none yet',
-      repo: 'none yet',
-      date: 'Jan 2018',
-      image: arkit,
-      homeImage: arkitHome,
-      bulletPoints: ['Still working on it!'],
-    },
-    {
       title: 'SnackTracker',
       website: 'https://snack-tracker.herokuapp.com',
       repo: 'https://github.com/rahul-krishnan/food_truck_tracker',
@@ -161,6 +163,19 @@ const data = {
         'Personalized daily food truck scheduling web app built using Rails and React',
         'Database repopulated hourly via web scraping to keep information current',
         'Users can search for local food trucks by name, location or time, as well as save favorite trucks and see daily food truck schedule and map using the Google Maps API',
+      ],
+    },
+    {
+      title: 'Podcastaway',
+      website: 'https://podcastaway.herokuapp.com',
+      repo: 'https://github.com/katherine-sawyer/podcastaway',
+      date: 'Jan 2017',
+      image: podcastaway,
+      homeImage: podcastawayHome,
+      bulletPoints: [
+        'Group project, podcast review site that supports user and admin accounts',
+        'Responsive interface built in Rails, with live updates using React and Foundation for styling',
+        'Users receive email updates when there are comments posted on their entries',
       ],
     },
     {
@@ -178,19 +193,6 @@ const data = {
         'Story Generation Bot using Tracery',
         'Retrieve & tweet info from Google Spreadsheets',
         'Twitter Audio Bot that composes songs',
-      ],
-    },
-    {
-      title: 'Podcastaway',
-      website: 'https://podcastaway.herokuapp.com',
-      repo: 'https://github.com/katherine-sawyer/podcastaway',
-      date: 'Jan 2017',
-      image: podcastaway,
-      homeImage: podcastawayHome,
-      bulletPoints: [
-        'Group project, podcast review site that supports user and admin accounts',
-        'Responsive interface built in Rails, with live updates using React and Foundation for styling',
-        'Users receive email updates when there are comments posted on their entries',
       ],
     },
     {
@@ -226,6 +228,18 @@ const data = {
       bulletPoints: [
         'Simple Image board site built using React and Redux',
         'Responsive design with user comments and likes',
+      ],
+    },
+    {
+      title: 'AR Kit',
+      website: 'none yet',
+      repo: 'none yet',
+      date: 'Jan 2018',
+      image: arkit,
+      homeImage: arkitHome,
+      bulletPoints: [
+        'Still working on it!',
+        'Still working on it!',
       ],
     },
   ],

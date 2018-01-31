@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.module.css';
+import IntroText from '../IntroText/';
 
 class HeaderSection extends Component {
   componentDidMount() {
@@ -23,9 +24,9 @@ class HeaderSection extends Component {
 
   render() {
     let backgroundStyle = `${styles.background} animated`;
+    let overlayStyle = `${styles.overlay} animated`;
     let profileStyle = `${styles.profilePic} animated zoomIn`;
     let nameStyle = `${styles.title} animated fadeInUp`;
-    let introStyle = `${styles.intro} animated fadeInUp`;
 
     let { title, profilePic, intro, background, overlay } = this.props.data;
 
@@ -38,14 +39,14 @@ class HeaderSection extends Component {
           src={background}
         />
         <img
-          className={styles.overlay}
+          className={overlayStyle}
           id="overlay"
           alt={title}
           src={overlay}
         />
         <img className={profileStyle} alt={title} src={profilePic} />
         <h1 className={nameStyle}>{title}</h1>
-        <p className={introStyle}>{intro}</p>
+        <IntroText text={intro}/>
       </div>
     );
   }

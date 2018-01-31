@@ -2,21 +2,29 @@ import React, { Component } from 'react';
 import styles from './styles.module.css';
 import PreviewIcon from '../PreviewIcon/';
 import Modal from 'react-modal';
+import $ from 'jquery';
 
 class Job extends Component {
   state = {
     modalOpen: false,
+    modalStyle: '',
     textOverflown: false,
   };
 
   expandModal = () => {
-    this.setState({ modalOpen: true });
+    this.setState({
+      modalStyle: `${styles.modal} animated zoomIn`,
+      modalOpen: true,
+    });
     this.scrollCheck();
     this.windowSizeCheck();
   };
 
   closeModal = () => {
-    this.setState({ modalOpen: false });
+    this.setState({
+      modalStyle: `${styles.modal} animated zoomOut`,
+      modalOpen: false,
+    });
   };
 
   windowSizeCheck = () => {
@@ -52,6 +60,10 @@ class Job extends Component {
     this.setState({ textOverflown: overflown });
   };
 
+  scrollDown = () => {
+    $("#textBox").animate({ scrollTop: $('#textBox').prop("scrollHeight")}, 1000);
+  }
+
   render() {
     let {
       company,
@@ -64,6 +76,7 @@ class Job extends Component {
       website,
       downArrow,
     } = this.props;
+
     return (
       <div>
         <div onClick={this.expandModal}>
@@ -74,7 +87,7 @@ class Job extends Component {
           ariaHideApp={false}
           closeTimeoutMS={250}
           overlayClassName={styles.overlay}
-          className={styles.modal}
+          className={this.state.modalStyle}
         >
           <div
             className={styles.backgroundImage}
@@ -110,7 +123,12 @@ class Job extends Component {
               Go Back
             </div>
             {this.state.textOverflown && (
-              <img className={styles.more} alt="scrollDown" src={downArrow} />
+              <img
+                className={styles.more}
+                alt="scrollDown"
+                src={downArrow}
+                onClick={this.scrollDown}
+              />
             )}
           </div>
         </Modal>
