@@ -1,5 +1,4 @@
 /build
-/node_modules
 /coverage
 .DS_Store
 .env.local
@@ -9,3 +8,4 @@
 yarn-debug.log*
 yarn-error.log*
 .DS_Store
+node_modules/
