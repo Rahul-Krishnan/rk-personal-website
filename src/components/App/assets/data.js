@@ -1,5 +1,6 @@
 import headerBackground from '../../HeaderSection/assets/background.jpg';
 import overlay from '../../HeaderSection/assets/overlay.png';
+import overlayFlipped from '../../HeaderSection/assets/overlayFlipped.png';
 import profilePic from '../../HeaderSection/assets/profile.jpg';
 import downArrow from './downArrow.gif';
 import election from '../../Project/assets/election3.png';
@@ -26,11 +27,13 @@ import javaScript from '../../Language/assets/javascript.png';
 import react from '../../Language/assets/react.png';
 import router from '../../Language/assets/router.png';
 import redux from '../../Language/assets/redux.png';
+import recompose from '../../Language/assets/recompose.png';
 import node from '../../Language/assets/node.png';
 import enzyme from '../../Language/assets/enzyme.png';
 import jest from '../../Language/assets/jest.png';
 import s3 from '../../Language/assets/s3.png';
 import googleCloud from '../../Language/assets/googlecloud.png';
+import elastic from '../../Language/assets/elastic.png';
 import sql from '../../Language/assets/sql.png';
 import postgres from '../../Language/assets/postgres.png';
 import git from '../../Language/assets/git.png';
@@ -57,6 +60,7 @@ const data = {
     header: {
       background: headerBackground,
       overlay: overlay,
+      overlayFlipped: overlayFlipped,
       profilePic: profilePic,
       title: 'Rahul Krishnan',
       intro: {
@@ -90,20 +94,6 @@ const data = {
     },
   },
   languages: [
-    { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
-    {
-      name: 'Postgres',
-      image: postgres,
-      website: 'https://www.postgresql.org',
-    },
-    { name: 'Git', image: git, website: 'https://git-scm.com' },
-    { name: 'GitHub', image: github, website: 'https://github.com/' },
-    { name: 'Amazon S3', image: s3, website: 'https://aws.amazon.com/s3' },
-    {
-      name: 'Google Cloud',
-      image: googleCloud,
-      website: 'https://cloud.google.com',
-    },
     {
       name: 'HTML5',
       image: html,
@@ -134,9 +124,25 @@ const data = {
       website: 'https://reacttraining.com/react-router',
     },
     { name: 'Redux', image: redux, website: 'https://redux.js.org' },
+    { name: 'Recompose', image: recompose, website: 'https://github.com/acdlite/recompose' },
     { name: 'Node', image: node, website: 'https://nodejs.org' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
     { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
+    { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
+    {
+      name: 'Postgres',
+      image: postgres,
+      website: 'https://www.postgresql.org',
+    },
+    { name: 'Git', image: git, website: 'https://git-scm.com' },
+    { name: 'GitHub', image: github, website: 'https://github.com/' },
+    { name: 'Amazon S3', image: s3, website: 'https://aws.amazon.com/s3' },
+    {
+      name: 'Google Cloud',
+      image: googleCloud,
+      website: 'https://cloud.google.com',
+    },
+    { name: 'ElasticSearch', image: elastic, website: 'https://www.elastic.co' },
     {
       name: 'Bloomberg',
       image: bloomberg,
@@ -144,12 +150,12 @@ const data = {
     },
     { name: 'Reuters', image: reuters, website: 'https://www.reuters.com' },
     { name: 'Intex', image: intex, website: 'http://www.intex.com/main' },
-    {
-      name: 'Yield Book',
-      image: yieldbook,
-      website: 'https://www.yieldbook.com',
-    },
-    { name: 'Stata', image: stata, website: 'https://www.stata.com' },
+    // {
+    //   name: 'Yield Book',
+    //   image: yieldbook,
+    //   website: 'https://www.yieldbook.com',
+    // },
+    // { name: 'Stata', image: stata, website: 'https://www.stata.com' },
   ],
   projects: [
     {
