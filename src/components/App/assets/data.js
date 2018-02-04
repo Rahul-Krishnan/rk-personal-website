@@ -19,6 +19,7 @@ import tweetbotsHome from '../../Project/assets/tweetbotsHome.png';
 import arkit from '../../Project/assets/arkit.png';
 import html from '../../Language/assets/html.png';
 import css from '../../Language/assets/css.png';
+import sass from '../../Language/assets/sass.png';
 import ruby from '../../Language/assets/ruby.png';
 import rails from '../../Language/assets/rails.png';
 import rspec from '../../Language/assets/rspec.png';
@@ -29,9 +30,11 @@ import router from '../../Language/assets/router.png';
 import redux from '../../Language/assets/redux.png';
 import recompose from '../../Language/assets/recompose.png';
 import node from '../../Language/assets/node.png';
+import elixir from '../../Language/assets/elixir.png';
+import phoenix from '../../Language/assets/phoenix.png';
 import enzyme from '../../Language/assets/enzyme.png';
 import jest from '../../Language/assets/jest.png';
-import s3 from '../../Language/assets/s3.png';
+import aws from '../../Language/assets/aws.png';
 import googleCloud from '../../Language/assets/googlecloud.png';
 import elastic from '../../Language/assets/elastic.png';
 import sql from '../../Language/assets/sql.png';
@@ -40,6 +43,7 @@ import git from '../../Language/assets/git.png';
 import github from '../../Language/assets/github.png';
 import bloomberg from '../../Language/assets/bloomberg.png';
 import reuters from '../../Language/assets/reuters.jpg';
+import tradeweb from '../../Language/assets/tradeweb.png';
 import intex from '../../Language/assets/intex.png';
 import yieldbook from '../../Language/assets/yieldbook.gif';
 import stata from '../../Language/assets/stata.png';
@@ -109,6 +113,7 @@ const data = {
       image: javaScript,
       website: 'http://es6-features.org',
     },
+    { name: 'SCSS', image: sass, website: 'https://sass-lang.com/' },
     { name: 'Ruby', image: ruby, website: 'https://www.ruby-lang.org' },
     { name: 'Rails', image: rails, website: 'https://www.rubyonrails.org' },
     { name: 'RSpec', image: rspec, website: 'https://rspec.info' },
@@ -128,15 +133,17 @@ const data = {
     { name: 'Node', image: node, website: 'https://nodejs.org' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
     { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
+    { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
+    { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
     { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
     {
-      name: 'Postgres',
+      name: 'PostgreSQL',
       image: postgres,
       website: 'https://www.postgresql.org',
     },
     { name: 'Git', image: git, website: 'https://git-scm.com' },
     { name: 'GitHub', image: github, website: 'https://github.com/' },
-    { name: 'Amazon S3', image: s3, website: 'https://aws.amazon.com/s3' },
+    { name: 'Amazon Web Services', image: aws, website: 'https://aws.amazon.com' },
     {
       name: 'Google Cloud',
       image: googleCloud,
@@ -149,13 +156,14 @@ const data = {
       website: 'https://www.bloomberg.com',
     },
     { name: 'Reuters', image: reuters, website: 'https://www.reuters.com' },
+    { name: 'Tradeweb', image: tradeweb, website: 'https://www.tradeweb.com' },
     { name: 'Intex', image: intex, website: 'http://www.intex.com/main' },
-    // {
-    //   name: 'Yield Book',
-    //   image: yieldbook,
-    //   website: 'https://www.yieldbook.com',
-    // },
-    // { name: 'Stata', image: stata, website: 'https://www.stata.com' },
+    {
+      name: 'Yield Book',
+      image: yieldbook,
+      website: 'https://www.yieldbook.com',
+    },
+    { name: 'Stata', image: stata, website: 'https://www.stata.com' },
   ],
   projects: [
     {
