@@ -16,28 +16,57 @@
   top: 0;
   width: 120%; }
 
-.overlay {
-  animation: driftDown 15s infinite, driftSideways 5s infinite;
+.overlay1 {
+  animation: driftDown1 180s infinite linear, driftSideways1 3s infinite linear;
+  animation-timing-function: ease-in-out;
   background-color: none;
-  height: 120%;
+  background-repeat: repeat;
+  background-size: 120vw 100vh;
+  height: 1000%;
   left: 0;
   opacity: 0.8;
   position: absolute;
   top: 0;
-  width: 120%;
-  z-index: 1; }
+  width: 500%;
+  z-index: 2; }
 
-@keyframes driftDown {
-  0%, 100% {
-    top: -12vh; }
-  50% {
-    top: 3vh; } }
+@keyframes driftDown1 {
+  0% {
+    background-position: -1% 0; }
+  100% {
+    background-position: -1% 100%; } }
 
-@keyframes driftSideways {
+@keyframes driftSideways1 {
   0%, 100% {
     left: 1vw; }
   50% {
-    left: 4vw; } }
+    left: 2vw; } }
+
+.overlay2 {
+  animation: driftDown2 120s infinite linear, driftSideways2 2s infinite linear;
+  animation-timing-function: ease-in-out;
+  background-color: none;
+  background-repeat: repeat;
+  background-size: 120vw 100vh;
+  height: 1000%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  width: 1000%;
+  z-index: 1; }
+
+@keyframes driftDown2 {
+  0% {
+    background-position: -1% 10%; }
+  100% {
+    background-position: -1% 100%; } }
+
+@keyframes driftSideways2 {
+  0%, 100% {
+    left: -9vw; }
+  50% {
+    left: -10vw; } }
 
 .profilePic {
   border-radius: 40vw;

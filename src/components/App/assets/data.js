@@ -1,5 +1,6 @@
 import headerBackground from '../../HeaderSection/assets/background.jpg';
 import overlay from '../../HeaderSection/assets/overlay.png';
+import overlayFlipped from '../../HeaderSection/assets/overlayFlipped.png';
 import profilePic from '../../HeaderSection/assets/profile.jpg';
 import downArrow from './downArrow.gif';
 import election from '../../Project/assets/election3.png';
@@ -18,6 +19,7 @@ import tweetbotsHome from '../../Project/assets/tweetbotsHome.png';
 import arkit from '../../Project/assets/arkit.png';
 import html from '../../Language/assets/html.png';
 import css from '../../Language/assets/css.png';
+import sass from '../../Language/assets/sass.png';
 import ruby from '../../Language/assets/ruby.png';
 import rails from '../../Language/assets/rails.png';
 import rspec from '../../Language/assets/rspec.png';
@@ -26,17 +28,22 @@ import javaScript from '../../Language/assets/javascript.png';
 import react from '../../Language/assets/react.png';
 import router from '../../Language/assets/router.png';
 import redux from '../../Language/assets/redux.png';
+import recompose from '../../Language/assets/recompose.png';
 import node from '../../Language/assets/node.png';
+import elixir from '../../Language/assets/elixir.png';
+import phoenix from '../../Language/assets/phoenix.png';
 import enzyme from '../../Language/assets/enzyme.png';
 import jest from '../../Language/assets/jest.png';
-import s3 from '../../Language/assets/s3.png';
+import aws from '../../Language/assets/aws.png';
 import googleCloud from '../../Language/assets/googlecloud.png';
+import elastic from '../../Language/assets/elastic.png';
 import sql from '../../Language/assets/sql.png';
 import postgres from '../../Language/assets/postgres.png';
 import git from '../../Language/assets/git.png';
 import github from '../../Language/assets/github.png';
 import bloomberg from '../../Language/assets/bloomberg.png';
 import reuters from '../../Language/assets/reuters.jpg';
+import tradeweb from '../../Language/assets/tradeweb.png';
 import intex from '../../Language/assets/intex.png';
 import yieldbook from '../../Language/assets/yieldbook.gif';
 import stata from '../../Language/assets/stata.png';
@@ -57,6 +64,7 @@ const data = {
     header: {
       background: headerBackground,
       overlay: overlay,
+      overlayFlipped: overlayFlipped,
       profilePic: profilePic,
       title: 'Rahul Krishnan',
       intro: {
@@ -90,20 +98,6 @@ const data = {
     },
   },
   languages: [
-    { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
-    {
-      name: 'Postgres',
-      image: postgres,
-      website: 'https://www.postgresql.org',
-    },
-    { name: 'Git', image: git, website: 'https://git-scm.com' },
-    { name: 'GitHub', image: github, website: 'https://github.com/' },
-    { name: 'Amazon S3', image: s3, website: 'https://aws.amazon.com/s3' },
-    {
-      name: 'Google Cloud',
-      image: googleCloud,
-      website: 'https://cloud.google.com',
-    },
     {
       name: 'HTML5',
       image: html,
@@ -119,6 +113,7 @@ const data = {
       image: javaScript,
       website: 'http://es6-features.org',
     },
+    { name: 'SCSS', image: sass, website: 'https://sass-lang.com/' },
     { name: 'Ruby', image: ruby, website: 'https://www.ruby-lang.org' },
     { name: 'Rails', image: rails, website: 'https://www.rubyonrails.org' },
     { name: 'RSpec', image: rspec, website: 'https://rspec.info' },
@@ -134,15 +129,34 @@ const data = {
       website: 'https://reacttraining.com/react-router',
     },
     { name: 'Redux', image: redux, website: 'https://redux.js.org' },
+    { name: 'Recompose', image: recompose, website: 'https://github.com/acdlite/recompose' },
     { name: 'Node', image: node, website: 'https://nodejs.org' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
     { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
+    { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
+    { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
+    { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
+    {
+      name: 'PostgreSQL',
+      image: postgres,
+      website: 'https://www.postgresql.org',
+    },
+    { name: 'Git', image: git, website: 'https://git-scm.com' },
+    { name: 'GitHub', image: github, website: 'https://github.com/' },
+    { name: 'Amazon Web Services', image: aws, website: 'https://aws.amazon.com' },
+    {
+      name: 'Google Cloud',
+      image: googleCloud,
+      website: 'https://cloud.google.com',
+    },
+    { name: 'ElasticSearch', image: elastic, website: 'https://www.elastic.co' },
     {
       name: 'Bloomberg',
       image: bloomberg,
       website: 'https://www.bloomberg.com',
     },
     { name: 'Reuters', image: reuters, website: 'https://www.reuters.com' },
+    { name: 'Tradeweb', image: tradeweb, website: 'https://www.tradeweb.com' },
     { name: 'Intex', image: intex, website: 'http://www.intex.com/main' },
     {
       name: 'Yield Book',
