@@ -5,7 +5,7 @@ import Project from '../Project/';
 class ProjectSection extends Component {
   render() {
     let titleInitial = `${styles.sectionTitle} animated fadeInUp`;
-    let sectionOpen = 'animated zoomIn';
+    let sectionOpen = `${styles.sectionOpen} animated zoomIn`;
     let centerTitleCircle = `${styles.sectionTitleCircle} animated fadeInDown`;
     let { selected, title, data, toggleTo, toggleSection, downArrow } = this.props
 
@@ -21,6 +21,11 @@ class ProjectSection extends Component {
             {title}
           </div>
           <div className={sectionOpen}>
+            <figure className={styles.chart}>
+              <svg className={styles.circleDraw}>
+                <circle className={styles.outer}/>
+              </svg>
+            </figure>
             <div className={styles.iconRow} id="projects">
               {data
                 .slice(0, 2)

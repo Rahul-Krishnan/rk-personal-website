@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import ContactItem from '../ContactItem/';
 // import ContactTextSection from '../ContactTextSection/'
 
-const FooterSection = ({ title, data }) => (
+const FooterSection = ({ title, background, data }) => (
   <footer className={styles.footer}>
     <div className={styles.footerTitle} id="contact">
       {title}
@@ -19,6 +19,11 @@ const FooterSection = ({ title, data }) => (
       />
     ))}
     {/* <ContactTextSection /> */}
+    <img
+      className={styles.background}
+      alt={title}
+      src={background}
+    />
   </footer>
 )
 

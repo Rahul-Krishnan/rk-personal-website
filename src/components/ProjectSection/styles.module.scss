@@ -23,6 +23,54 @@ $baseSizePx: 72px;
   }
 }
 
+.sectionOpen {
+  font-family: 'Pacifico', cursive;
+}
+
+.chart {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto;
+  opacity: 0.8;
+  position: relative;
+  text-align: center;
+  top: 1.8 * $baseSizeVw;
+  width: 100%;
+  z-index: -1;
+}
+
+.circleDraw {
+  animation: showTop 1s;
+  height: 5.5 * $baseSizeVw;
+  padding: 0.22 * $baseSizeVw;
+  position: absolute;
+  margin: 0 auto;
+  stroke-dashoffset: 4 * $baseSizeVw;
+  transform: rotate(20deg);
+  width: 5.5 * $baseSizeVw;
+  z-index: -1;
+}
+
+.outer {
+  animation-play-state: running;
+  cx: 2.8 * $baseSizeVw;
+  cy: 2.6 * $baseSizeVw;
+  fill: transparent;
+  opacity: 0.8;
+  stroke: #FFFFFF;
+  stroke-width: 0.2 * $baseSizeVw;
+  stroke-dasharray: 17 * $baseSizeVw;
+  transition: stroke-dashoffset 1s;
+  r: 2.7 * $baseSizeVw;
+  z-index: -1;
+}
+
+@keyframes showTop {
+  from {
+    stroke-dashoffset: 17 * $baseSizeVw;
+  }
+}
+
 .sectionTitleCircle {
   border-radius: 4 * $baseSizeVw;
   display: block;
@@ -34,7 +82,7 @@ $baseSizePx: 72px;
   padding: 0.22 * $baseSizeVw;
   position: relative;
   text-align: center;
-  top: 6.8 * $baseSizeVw;
+  top: 7.1 * $baseSizeVw;
   width: 4 * $baseSizeVw;
   z-index: 1;
 
@@ -49,7 +97,6 @@ $baseSizePx: 72px;
   justify-content: space-evenly;
   margin: 0 auto;
   padding: 0.5 * $baseSizeVw 1 * $baseSizeVw;
-  width: 8 * $baseSizeVw;
   z-index: -1;
 }
 
@@ -58,7 +105,6 @@ $baseSizePx: 72px;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 * $baseSizeVw 0.4 * $baseSizeVw;
-  width: 9.2 * $baseSizeVw;
   z-index: -1;
 }
 
@@ -72,18 +118,44 @@ $baseSizePx: 72px;
     padding: 0.22 * $baseSizePx;
   }
 
+  .chart {
+    top: 1.8 * $baseSizePx;
+  }
+
+  .circleDraw {
+    animation: showTop 1s;
+    height: 5.5 * $baseSizePx;
+    padding: 0.22 * $baseSizePx;
+    stroke-dashoffset: 4 * $baseSizePx;
+    width: 5.5 * $baseSizePx;
+  }
+
+  .outer {
+    animation-play-state: running;
+    cx: 2.8 * $baseSizePx;
+    cy: 2.6 * $baseSizePx;
+    stroke-width: 0.2 * $baseSizePx;
+    stroke-dasharray: 17 * $baseSizePx;
+    r: 2.7 * $baseSizePx;
+  }
+
+  @keyframes showTop {
+    from {
+      stroke-dashoffset: 17 * $baseSizePx;
+    }
+  }
+
   .sectionTitleCircle {
     border-radius: 4 * $baseSizePx;
     font-size: 0.5 * $baseSizePx;
     height: 4 * $baseSizePx;
     line-height: 4 * $baseSizePx;
     padding: 0.22 * $baseSizePx;
-    top: 6.8 * $baseSizePx;
+    top: 7.1 * $baseSizePx;
     width: 4 * $baseSizePx;
   }
 
   .iconRow {
-    justify-content: space-evenly;
     padding: 0.5 * $baseSizePx 1 * $baseSizePx;
     width: 8 * $baseSizePx;
   }

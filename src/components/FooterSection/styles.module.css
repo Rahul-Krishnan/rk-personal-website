@@ -1,9 +1,20 @@
 .footer {
-  background-color: sienna;
   color: #FFFFFF;
   min-height: 45vh;
+  overflow: hidden;
   padding: 24px;
+  position: relative;
   text-align: center; }
+
+.background {
+  height: 180%;
+  right: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: -30%;
+  transform: scaleY(-1);
+  width: 120%;
+  z-index: -1; }
 
 .footerTitle {
   font-family: 'Pacifico', cursive;

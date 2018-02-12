@@ -1,6 +1,8 @@
-import headerBackground from '../../HeaderSection/assets/background.jpg';
-import overlay from '../../HeaderSection/assets/overlay.png';
-import overlayFlipped from '../../HeaderSection/assets/overlayFlipped.png';
+import headerBackground from '../../HeaderSection/assets/background.png';
+import overlay1 from '../../HeaderSection/assets/darkTriangle.png';
+import overlay2 from '../../HeaderSection/assets/yellowTriangle.png';
+import overlay3 from '../../HeaderSection/assets/greenTriangle.png';
+import overlay4 from '../../HeaderSection/assets/equiTriangle.png';
 import profilePic from '../../HeaderSection/assets/profile.jpg';
 import downArrow from './downArrow.gif';
 import election from '../../Project/assets/election3.png';
@@ -30,6 +32,8 @@ import router from '../../Language/assets/router.png';
 import redux from '../../Language/assets/redux.png';
 import recompose from '../../Language/assets/recompose.png';
 import node from '../../Language/assets/node.png';
+import arKit from '../../Language/assets/arkit.png';
+import reactVr from '../../Language/assets/react-vr.png';
 import elixir from '../../Language/assets/elixir.png';
 import phoenix from '../../Language/assets/phoenix.png';
 import enzyme from '../../Language/assets/enzyme.png';
@@ -55,6 +59,7 @@ import launch from '../../Job/assets/launch.png';
 import columbia from '../../School/assets/columbia.png';
 import email from '../../ContactItem/assets/email.png';
 import linkedin from '../../ContactItem/assets/linkedin.png';
+import githubWhite from '../../ContactItem/assets/github.png';
 
 const data = {
   icons: {
@@ -63,8 +68,10 @@ const data = {
   sections: {
     header: {
       background: headerBackground,
-      overlay: overlay,
-      overlayFlipped: overlayFlipped,
+      overlay1: overlay1,
+      overlay2: overlay2,
+      overlay3: overlay3,
+      overlay4: overlay4,
       profilePic: profilePic,
       title: 'Rahul Krishnan',
       intro: {
@@ -75,9 +82,6 @@ const data = {
           'multidisciplinary',
           'a former trader',
           'into adventure RPGs',
-          'a 2nd degree Black Belt',
-          'an amateur magician',
-          'a guinea pig fan',
         ],
       },
     },
@@ -94,6 +98,7 @@ const data = {
       title: 'Education',
     },
     contact: {
+      background: headerBackground,
       title: 'Contact me',
     },
   },
@@ -131,10 +136,12 @@ const data = {
     { name: 'Redux', image: redux, website: 'https://redux.js.org' },
     { name: 'Recompose', image: recompose, website: 'https://github.com/acdlite/recompose' },
     { name: 'Node', image: node, website: 'https://nodejs.org' },
+    { name: 'React VR', image: reactVr, website: 'https://facebook.github.io/react-vr/' },
+    { name: 'AR.js', image: arKit, website: 'https://jeromeetienne.github.io/AR.js/' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
     { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
-    { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
-    { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
+    // { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
+    // { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
     { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
     {
       name: 'PostgreSQL',
@@ -167,32 +174,6 @@ const data = {
   ],
   projects: [
     {
-      title: 'SnackTracker',
-      website: 'https://snack-tracker.herokuapp.com',
-      repo: 'https://github.com/rahul-krishnan/food_truck_tracker',
-      date: 'Feb 2017',
-      image: snacktracker,
-      homeImage: snacktrackerHome,
-      bulletPoints: [
-        'Personalized daily food truck scheduling web app built using Rails and React',
-        'Database repopulated hourly via web scraping to keep information current',
-        'Users can search for local food trucks by name, location or time, as well as save favorite trucks and see daily food truck schedule and map using the Google Maps API',
-      ],
-    },
-    {
-      title: 'Podcastaway',
-      website: 'https://podcastaway.herokuapp.com',
-      repo: 'https://github.com/katherine-sawyer/podcastaway',
-      date: 'Jan 2017',
-      image: podcastaway,
-      homeImage: podcastawayHome,
-      bulletPoints: [
-        'Group project, podcast review site that supports user and admin accounts',
-        'Responsive interface built in Rails, with live updates using React and Foundation for styling',
-        'Users receive email updates when there are comments posted on their entries',
-      ],
-    },
-    {
       title: 'Tweet Bots',
       website: 'https://twitter.com/Rahul_Dev_Acct',
       repo: 'https://github.com/Rahul-Krishnan/TwitterBots',
@@ -210,15 +191,28 @@ const data = {
       ],
     },
     {
-      title: 'Pinteresting',
-      website: 'https://run-pinteresting.herokuapp.com',
-      repo: 'https://github.com/rahul-krishnan/pinteresting',
-      date: 'Oct 2016',
-      image: pinteresting,
-      homeImage: pinterestingHome,
+      title: 'Reduxtagram',
+      website: 'https://reduxtagram-rk.herokuapp.com/',
+      repo: 'https://github.com/Rahul-Krishnan/Reduxtagram',
+      date: 'Sep 2017',
+      image: reduxtagram,
+      homeImage: reduxtagramHome,
       bulletPoints: [
-        'Imageboard site that supports user accounts and dynamically rearranges images to screen size',
-        'Built using Rails, with Devise for user authentication and Bootstrap for styling',
+        'Simple Image board site built using React and Redux',
+        'Responsive design with user comments and likes',
+      ],
+    },
+    {
+      title: 'SnackTracker',
+      website: 'https://snack-tracker.herokuapp.com',
+      repo: 'https://github.com/rahul-krishnan/food_truck_tracker',
+      date: 'Feb 2017',
+      image: snacktracker,
+      homeImage: snacktrackerHome,
+      bulletPoints: [
+        'Personalized daily food truck scheduling web app built using Rails and React',
+        'Database repopulated hourly via web scraping to keep information current',
+        'Users can search for local food trucks by name, location or time, as well as save favorite trucks and see daily food truck schedule and map using the Google Maps API',
       ],
     },
     {
@@ -233,15 +227,28 @@ const data = {
       ],
     },
     {
-      title: 'Reduxtagram',
-      website: 'https://reduxtagram-rk.herokuapp.com/',
-      repo: 'https://github.com/Rahul-Krishnan/Reduxtagram',
-      date: 'Sep 2017',
-      image: reduxtagram,
-      homeImage: reduxtagramHome,
+      title: 'Podcastaway',
+      website: 'https://podcastaway.herokuapp.com',
+      repo: 'https://github.com/katherine-sawyer/podcastaway',
+      date: 'Jan 2017',
+      image: podcastaway,
+      homeImage: podcastawayHome,
       bulletPoints: [
-        'Simple Image board site built using React and Redux',
-        'Responsive design with user comments and likes',
+        'Group project, podcast review site that supports user and admin accounts',
+        'Responsive interface built in Rails, with live updates using React and Foundation for styling',
+        'Users receive email updates when there are comments posted on their entries',
+      ],
+    },
+    {
+      title: 'Pinteresting',
+      website: 'https://run-pinteresting.herokuapp.com',
+      repo: 'https://github.com/rahul-krishnan/pinteresting',
+      date: 'Oct 2016',
+      image: pinteresting,
+      homeImage: pinterestingHome,
+      bulletPoints: [
+        'Imageboard site that supports user accounts and dynamically rearranges images to screen size',
+        'Built using Rails, with Devise for user authentication and Bootstrap for styling',
       ],
     },
     {
@@ -291,6 +298,20 @@ const data = {
       website: 'https://launchacademy.com',
     },
     {
+      company: 'Credit Suisse',
+      title: 'Trader, Associate',
+      location: 'New York, NY',
+      startDate: 'Jul 2008',
+      endDate: 'Jun 2012',
+      bulletPoints: [
+        'Traded and hedged mortgage derivatives trading book',
+        'Part of syndicate that launched the Synthetic IO (IOS)',
+        'Provided pricing on mortgage products for margin calls, repo and month-end marks',
+      ],
+      image: creditSuisse,
+      website: 'https://credit-suisse.com',
+    },
+    {
       company: 'Société Générale',
       title: 'Trader, Vice President',
       location: 'New York, NY',
@@ -317,20 +338,6 @@ const data = {
       ],
       image: cello,
       website: 'https://www.cellocapital.com',
-    },
-    {
-      company: 'Credit Suisse',
-      title: 'Trader, Associate',
-      location: 'New York, NY',
-      startDate: 'Jul 2008',
-      endDate: 'Jun 2012',
-      bulletPoints: [
-        'Traded and hedged mortgage derivatives trading book',
-        'Part of syndicate that launched the Synthetic IO (IOS)',
-        'Provided pricing on mortgage products for margin calls, repo and month-end marks',
-      ],
-      image: creditSuisse,
-      website: 'https://credit-suisse.com',
     },
   ],
   education: [
@@ -364,7 +371,7 @@ const data = {
     {
       type: 'GitHub',
       details: 'https://github.com/rahul-krishnan',
-      image: github,
+      image: githubWhite,
     },
   ],
 };

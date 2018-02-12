@@ -8,30 +8,30 @@ class HeaderSection extends Component {
   }
 
   setOverlayMovement = () => {
-    let overlay1 = document.querySelector(`#overlay1`);
-    // let overlay2 = document.querySelector(`#overlay2`);
+    let overlaySet = document.querySelector(`#overlaySet`);
     let background = document.querySelector(`#background`);
-    overlay1.onmousemove = event => {
+    let header = document.querySelector(`#header`);
+    header.onmousemove = event => {
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
 
-      const mouseX = event.clientX / windowWidth;
-      const mouseY = event.clientY / windowHeight;
-
-      overlay1.style.transform = `translate3d(-${1 * mouseX}%, -${1 * mouseY}%, 0)`;
-      // overlay2.style.transform = `translate3d(${0.5 -(1.5 * mouseX)}%, ${-1.5 * mouseY}%, 0)`;
+      let mouseX = event.clientX / windowWidth;
+      let mouseY = event.clientY / windowHeight;
+      overlaySet.style.transform = `translate3d(${5 - 10 * mouseX}%, ${5 - 10 * mouseY}%, 0)`;
       background.style.transform = `translate3d(${1 * mouseX}%, ${1 * mouseY}%, 0)`;
     };
   }
 
   render() {
     let backgroundStyle = `${styles.background} animated`;
-    let overlayStyle1 = `${styles.overlay1} animated`;
-    let overlayStyle2 = `${styles.overlay2} animated`;
+    let overlayStyle1 = `${styles.overlay1} animated slideInRight`;
+    let overlayStyle2 = `${styles.overlay2} animated slideInLeft`;
+    let overlayStyle3 = `${styles.overlay3} animated slideInRight`;
+    let overlayStyle4 = `${styles.overlay4} animated slideInLeft`;
     let profileStyle = `${styles.profilePic} animated zoomIn`;
     let nameStyle = `${styles.title} animated fadeInUp`;
 
-    let { title, profilePic, intro, background, overlay, overlayFlipped } = this.props.data;
+    let { title, profilePic, intro, background, overlay1, overlay2, overlay3, overlay4 } = this.props.data;
 
     return (
       <div className={styles.header} id="header">
@@ -41,16 +41,28 @@ class HeaderSection extends Component {
           alt={title}
           src={background}
         />
-        <div
-          className={overlayStyle1}
-          style={{backgroundImage: `url(${overlay})`}}
-          id="overlay1"
-        />
-        {/* <div
-          className={overlayStyle2}
-          style={{backgroundImage: `url(${overlayFlipped})`}}
-          id="overlay2"
-        /> */}
+        <div className={styles.overlaySet} id="overlaySet">
+          <img
+            className={overlayStyle1}
+            alt="overlay1"
+            src={overlay1}
+          />
+          <img
+            className={overlayStyle2}
+            alt="overlay2"
+            src={overlay2}
+          />
+          <img
+            className={overlayStyle3}
+            alt="overlay3"
+            src={overlay3}
+          />
+          <img
+            className={overlayStyle4}
+            alt="overlay4"
+            src={overlay4}
+          />
+        </div>
         <img className={profileStyle} alt={title} src={profilePic} />
         <h1 className={nameStyle}>{title}</h1>
         <IntroText text={intro}/>

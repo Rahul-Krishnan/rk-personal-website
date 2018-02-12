@@ -26,14 +26,14 @@
 
 .cycleWords {
   display: inline-block;
-  color: lime;
+  color: #FFFFFF;
   position: relative;
   white-space: nowrap;
   top: 0;
   left: 0;
-  animation: move 10s;
+  animation: move 12s;
   animation-iteration-count: infinite;
-  animation-delay: 2s; }
+  animation-delay: 0s; }
 
 .word {
   height: 5vw;
@@ -42,20 +42,16 @@
 @keyframes move {
   0% {
     top: 0; }
-  12.5% {
+  16.7% {
+    top: 0; }
+  33.3% {
     top: -5vw; }
-  25% {
-    top: -10vw; }
-  37.5% {
-    top: -15vw; }
   50% {
-    top: -20vw; }
-  62.5% {
-    top: -25vw; }
-  75% {
-    top: -30vw; }
-  87.5% {
-    top: -35vw; } }
+    top: -10vw; }
+  66.7% {
+    top: -15vw; }
+  83.3% {
+    top: -20vw; } }
 
 @media screen and (min-width: 720px) {
   .container {
@@ -74,17 +70,13 @@
   @keyframes move {
     0% {
       top: 0; }
-    12.5% {
+    16.7% {
+      top: 0; }
+    33.3% {
       top: -36px; }
-    25% {
-      top: -72px; }
-    37.5% {
-      top: -108px; }
     50% {
-      top: -144px; }
-    62.5% {
-      top: -180px; }
-    75% {
-      top: -216px; }
-    87.5% {
-      top: -252px; } } }
+      top: -72px; }
+    66.7% {
+      top: -108px; }
+    83.3% {
+      top: -144px; } } }
