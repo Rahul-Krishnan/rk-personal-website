@@ -35,8 +35,8 @@
   padding: 2.2vw;
   position: absolute;
   margin: 0 auto;
-  stroke-dashoffset: 40vw;
-  transform: rotate(20deg);
+  stroke-dashoffset: 30vw;
+  transform: rotate(360deg);
   width: 55vw;
   z-index: -1; }
 
@@ -101,7 +101,7 @@
     animation: showTop 1s;
     height: 396px;
     padding: 15.84px;
-    stroke-dashoffset: 288px;
+    stroke-dashoffset: 216px;
     width: 396px; }
   .outer {
     animation-play-state: running;

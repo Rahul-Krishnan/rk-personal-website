@@ -3,6 +3,8 @@ import overlay1 from '../../HeaderSection/assets/darkTriangle.png';
 import overlay2 from '../../HeaderSection/assets/yellowTriangle.png';
 import overlay3 from '../../HeaderSection/assets/greenTriangle.png';
 import overlay4 from '../../HeaderSection/assets/equiTriangle.png';
+import overlay5 from '../../HeaderSection/assets/orangeTriangle.png';
+import overlay6 from '../../HeaderSection/assets/purpleRectangle.png';
 import profilePic from '../../HeaderSection/assets/profile.jpg';
 import downArrow from './downArrow.gif';
 import election from '../../Project/assets/election3.png';
@@ -72,6 +74,8 @@ const data = {
       overlay2: overlay2,
       overlay3: overlay3,
       overlay4: overlay4,
+      overlay5: overlay5,
+      overlay6: overlay6,
       profilePic: profilePic,
       title: 'Rahul Krishnan',
       intro: {

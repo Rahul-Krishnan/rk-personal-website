@@ -45,8 +45,8 @@ $baseSizePx: 72px;
   padding: 0.22 * $baseSizeVw;
   position: absolute;
   margin: 0 auto;
-  stroke-dashoffset: 4 * $baseSizeVw;
-  transform: rotate(20deg);
+  stroke-dashoffset: 3 * $baseSizeVw;
+  transform: rotate(360deg);
   width: 5.5 * $baseSizeVw;
   z-index: -1;
 }
@@ -126,7 +126,7 @@ $baseSizePx: 72px;
     animation: showTop 1s;
     height: 5.5 * $baseSizePx;
     padding: 0.22 * $baseSizePx;
-    stroke-dashoffset: 4 * $baseSizePx;
+    stroke-dashoffset: 3 * $baseSizePx;
     width: 5.5 * $baseSizePx;
   }
 

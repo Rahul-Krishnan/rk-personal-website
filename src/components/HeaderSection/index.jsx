@@ -28,10 +28,23 @@ class HeaderSection extends Component {
     let overlayStyle2 = `${styles.overlay2} animated slideInLeft`;
     let overlayStyle3 = `${styles.overlay3} animated slideInRight`;
     let overlayStyle4 = `${styles.overlay4} animated slideInLeft`;
+    let overlayStyle5 = `${styles.overlay5} animated slideInLeft`;
+    let overlayStyle6 = `${styles.overlay6} animated slideInLeft`;
     let profileStyle = `${styles.profilePic} animated zoomIn`;
     let nameStyle = `${styles.title} animated fadeInUp`;
 
-    let { title, profilePic, intro, background, overlay1, overlay2, overlay3, overlay4 } = this.props.data;
+    let {
+      title,
+      profilePic,
+      intro,
+      background,
+      overlay1,
+      overlay2,
+      overlay3,
+      overlay4,
+      overlay5,
+      overlay6,
+    } = this.props.data;
 
     return (
       <div className={styles.header} id="header">
@@ -42,26 +55,12 @@ class HeaderSection extends Component {
           src={background}
         />
         <div className={styles.overlaySet} id="overlaySet">
-          <img
-            className={overlayStyle1}
-            alt="overlay1"
-            src={overlay1}
-          />
-          <img
-            className={overlayStyle2}
-            alt="overlay2"
-            src={overlay2}
-          />
-          <img
-            className={overlayStyle3}
-            alt="overlay3"
-            src={overlay3}
-          />
-          <img
-            className={overlayStyle4}
-            alt="overlay4"
-            src={overlay4}
-          />
+          <img className={overlayStyle1} alt="overlay1" src={overlay1} />
+          <img className={overlayStyle2} alt="overlay2" src={overlay2} />
+          <img className={overlayStyle3} alt="overlay3" src={overlay3} />
+          <img className={overlayStyle4} alt="overlay4" src={overlay4} />
+          <img className={overlayStyle5} alt="overlay5" src={overlay5} />
+          <img className={overlayStyle6} alt="overlay6" src={overlay6} />
         </div>
         <img className={profileStyle} alt={title} src={profilePic} />
         <h1 className={nameStyle}>{title}</h1>

@@ -46,7 +46,7 @@
     transform: rotate(10deg); } }
 
 .overlay2 {
-  animation: rotate2 8s ease-in-out forwards infinite;
+  animation: rotate2 10s ease-in-out forwards infinite;
   height: 120%;
   opacity: 0.5;
   position: absolute;
@@ -58,11 +58,11 @@
 
 @keyframes rotate2 {
   0% {
-    transform: rotate(-10deg); }
+    transform: rotate(-18deg); }
   50% {
-    transform: rotate(10deg); }
+    transform: rotate(18deg); }
   100% {
-    transform: rotate(-10deg); } }
+    transform: rotate(-18deg); } }
 
 .overlay3 {
   animation: rotate3 3s ease-in-out forwards infinite;
@@ -86,7 +86,7 @@
 .overlay4 {
   animation: rotate4 3s ease-in-out forwards infinite;
   height: 120%;
-  opacity: 0.4;
+  opacity: 0.6;
   position: absolute;
   right: 0;
   top: 0;
@@ -96,11 +96,49 @@
 
 @keyframes rotate4 {
   0% {
-    transform: rotate(-5deg); }
+    transform: rotate(-20deg); }
   50% {
-    transform: rotate(5deg); }
+    transform: rotate(20deg); }
   100% {
-    transform: rotate(-5deg); } }
+    transform: rotate(-20deg); } }
+
+.overlay5 {
+  animation: rotate5 4s ease-in-out forwards infinite;
+  height: 120%;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: 45% 10%;
+  width: 120%;
+  z-index: 1; }
+
+@keyframes rotate5 {
+  0% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(15deg); }
+  100% {
+    transform: rotate(-15deg); } }
+
+.overlay6 {
+  animation: rotate6 2s ease-in-out forwards infinite;
+  height: 120%;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: 77% 10%;
+  width: 120%;
+  z-index: 1; }
+
+@keyframes rotate6 {
+  0% {
+    transform: rotate(-12deg); }
+  50% {
+    transform: rotate(12deg); }
+  100% {
+    transform: rotate(-12deg); } }
 
 .profilePic {
   border-radius: 100%;
