@@ -42,7 +42,7 @@ a {
   padding: 0 8px; }
 
 .closeButton {
-  background-color: sienna;
+  background-color: green;
   border-radius: 8px;
   color: #FFFFFF;
   display: block;
@@ -73,7 +73,7 @@ a {
   margin-bottom: 20px; }
 
 .link {
-  background-color: sienna;
+  background-color: green;
   border-radius: 8px;
   color: #FFFFFF;
   display: block;
@@ -87,7 +87,20 @@ a {
   padding-top: 50px; }
 
 .bullet {
-  padding-bottom: 16px; }
+  padding-bottom: 6px; }
+
+.lineContainer {
+  animation-delay: 1s;
+  height: 8px;
+  margin: 0 auto;
+  width: 10vw; }
+  .lineContainer:last-child {
+    display: none; }
+
+.line {
+  margin: 0 auto;
+  stroke-width: 4px;
+  stroke: black; }
 
 .more {
   bottom: 2vh;
@@ -108,7 +121,7 @@ a {
   width: 100%; }
 
 .backButton {
-  background-color: sienna;
+  background-color: green;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 8px;

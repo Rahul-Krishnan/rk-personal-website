@@ -47,7 +47,7 @@ a {
 }
 
 .closeButton {
-  background-color: sienna;
+  background-color: green;
   border-radius: 8px;
   color: #FFFFFF;
   display: block;
@@ -86,7 +86,7 @@ a {
 }
 
 .link {
-  background-color: sienna;
+  background-color: green;
   border-radius: 8px;
   color: #FFFFFF;
   display: block;
@@ -104,7 +104,24 @@ a {
 }
 
 .bullet {
-  padding-bottom: 16px;
+  padding-bottom: 6px;
+}
+
+.lineContainer {
+  animation-delay: 1s;
+  height: 8px;
+  margin: 0 auto;
+  width: 10vw;
+
+  &:last-child {
+    display: none;
+  }
+}
+
+.line {
+  margin: 0 auto;
+  stroke-width: 4px;
+  stroke: black;
 }
 
 .more {
@@ -130,7 +147,7 @@ a {
 }
 
 .backButton {
-  background-color: sienna;
+  background-color: green;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 8px;

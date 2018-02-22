@@ -30,6 +30,9 @@ class HeaderSection extends Component {
     let overlayStyle4 = `${styles.overlay4} animated slideInLeft`;
     let overlayStyle5 = `${styles.overlay5} animated slideInLeft`;
     let overlayStyle6 = `${styles.overlay6} animated slideInLeft`;
+    let overlayStyle7 = `${styles.overlay7} animated slideInRight`;
+    let overlayStyle8 = `${styles.overlay8} animated slideInRight`;
+    let overlayStyle9 = `${styles.overlay9} animated slideInLeft`;
     let profileStyle = `${styles.profilePic} animated zoomIn`;
     let nameStyle = `${styles.title} animated fadeInUp`;
 
@@ -44,6 +47,9 @@ class HeaderSection extends Component {
       overlay4,
       overlay5,
       overlay6,
+      overlay7,
+      overlay8,
+      overlay9,
     } = this.props.data;
 
     return (
@@ -61,6 +67,9 @@ class HeaderSection extends Component {
           <img className={overlayStyle4} alt="overlay4" src={overlay4} />
           <img className={overlayStyle5} alt="overlay5" src={overlay5} />
           <img className={overlayStyle6} alt="overlay6" src={overlay6} />
+          <img className={overlayStyle7} alt="overlay7" src={overlay7} />
+          <img className={overlayStyle8} alt="overlay8" src={overlay8} />
+          <img className={overlayStyle9} alt="overlay9" src={overlay9} />
         </div>
         <img className={profileStyle} alt={title} src={profilePic} />
         <h1 className={nameStyle}>{title}</h1>

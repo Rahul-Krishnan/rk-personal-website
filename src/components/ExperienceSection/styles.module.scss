@@ -60,7 +60,7 @@ $baseSizePx: 72px;
   stroke: #FFFFFF;
   stroke-width: 0.2 * $baseSizeVw;
   stroke-dasharray: 17 * $baseSizeVw;
-  transition: stroke-dashoffset 1s;
+  transition: stroke-dashoffset 4s;
   r: 2.7 * $baseSizeVw;
   z-index: -1;
 }

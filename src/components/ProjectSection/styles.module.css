@@ -49,7 +49,7 @@
   stroke: #FFFFFF;
   stroke-width: 2vw;
   stroke-dasharray: 170vw;
-  transition: stroke-dashoffset 1s;
+  transition: stroke-dashoffset 4.5s;
   r: 27vw;
   z-index: -1; }
 
@@ -98,7 +98,6 @@
   .chart {
     top: 129.6px; }
   .circleDraw {
-    animation: showTop 1s;
     height: 396px;
     padding: 15.84px;
     stroke-dashoffset: 216px;
