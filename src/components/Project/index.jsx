@@ -118,8 +118,8 @@ class Project extends Component {
             </a>
             <div className={styles.bulletSection}>
               {bulletPoints.map(line => (
-                <Fragment>
-                  <div className={styles.bullet} key={line}>
+                <Fragment key={line}>
+                  <div className={styles.bullet}>
                     {line}
                   </div>
                   <svg className={lineContainerStyle}>

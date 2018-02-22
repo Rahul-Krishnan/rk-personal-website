@@ -115,8 +115,8 @@ class Job extends Component {
             </div>
             <div className={styles.bulletSection}>
               {bulletPoints.map(line => (
-                <Fragment>
-                  <div className={styles.bullet} key={line}>
+                <Fragment key={line}>
+                  <div className={styles.bullet}>
                     {line}
                   </div>
                   <svg className={lineContainerStyle}>
