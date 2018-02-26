@@ -261,18 +261,30 @@ const data = {
         'Built using Rails, with Devise for user authentication and Bootstrap for styling',
       ],
     },
-    {
-      title: 'AR Kit',
-      website: 'none yet',
-      repo: 'none yet',
-      date: 'Jan 2018',
-      image: arkit,
-      homeImage: arkitHome,
-      bulletPoints: [
-        'Still working on it!',
-        'Still working on it!',
-      ],
-    },
+    // {
+    //   title: 'AR Kit',
+    //   website: 'none yet',
+    //   repo: 'none yet',
+    //   date: 'Feb 2018',
+    //   image: arkit,
+    //   homeImage: arkitHome,
+    //   bulletPoints: [
+    //     'Still working on it!',
+    //     'Still working on it!',
+    //   ],
+    // },
+    // {
+    //   title: 'Virtual Rodent',
+    //   website: 'none yet',
+    //   repo: 'none yet',
+    //   date: 'Feb 2018',
+    //   image: reactVr,
+    //   homeImage: reactVr,
+    //   bulletPoints: [
+    //     'Still working on it!',
+    //     'Still working on it!',
+    //   ],
+    // },
   ],
   experience: [
     {
