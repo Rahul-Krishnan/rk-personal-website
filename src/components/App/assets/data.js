@@ -147,11 +147,11 @@ const data = {
     { name: 'Recompose', image: recompose, website: 'https://github.com/acdlite/recompose' },
     { name: 'Node', image: node, website: 'https://nodejs.org' },
     { name: 'React VR', image: reactVr, website: 'https://facebook.github.io/react-vr/' },
-    { name: 'AR.js', image: arKit, website: 'https://jeromeetienne.github.io/AR.js/' },
+    // { name: 'AR.js', image: arKit, website: 'https://jeromeetienne.github.io/AR.js/' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
     { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
-    // { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
-    // { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
+    { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
+    { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
     { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
     {
       name: 'PostgreSQL',
@@ -166,7 +166,7 @@ const data = {
       image: googleCloud,
       website: 'https://cloud.google.com',
     },
-    { name: 'ElasticSearch', image: elastic, website: 'https://www.elastic.co' },
+    { name: 'Elastic Search', image: elastic, website: 'https://www.elastic.co' },
     {
       name: 'Bloomberg',
       image: bloomberg,
@@ -180,7 +180,7 @@ const data = {
       image: yieldbook,
       website: 'https://www.yieldbook.com',
     },
-    { name: 'Stata', image: stata, website: 'https://www.stata.com' },
+    // { name: 'Stata', image: stata, website: 'https://www.stata.com' },
   ],
   projects: [
     {
@@ -200,6 +200,30 @@ const data = {
         'Twitter Audio Bot that composes songs',
       ],
     },
+    // {
+    //   title: 'AR Kit',
+    //   website: 'none yet',
+    //   repo: 'none yet',
+    //   date: 'Mar 2018',
+    //   image: arkit,
+    //   homeImage: arkitHome,
+    //   bulletPoints: [
+    //     'Still working on it!',
+    //     'Still working on it!',
+    //   ],
+    // },
+    // {
+    //   title: 'Virtual Rodent',
+    //   website: 'none yet',
+    //   repo: 'none yet',
+    //   date: 'Mar 2018',
+    //   image: reactVr,
+    //   homeImage: reactVr,
+    //   bulletPoints: [
+    //     'Still working on it!',
+    //     'Still working on it!',
+    //   ],
+    // },
     {
       title: 'Reduxtagram',
       website: 'https://reduxtagram-rk.herokuapp.com/',
@@ -209,7 +233,7 @@ const data = {
       homeImage: reduxtagramHome,
       bulletPoints: [
         'Simple Image board site built using React and Redux',
-        'Responsive design with user comments and likes',
+        'Responsive design with user comment display and likes',
       ],
     },
     {
@@ -222,7 +246,9 @@ const data = {
       bulletPoints: [
         'Personalized daily food truck scheduling web app built using Rails and React',
         'Database repopulated hourly via web scraping to keep information current',
-        'Users can search for local food trucks by name, location or time, as well as save favorite trucks and see daily food truck schedule and map using the Google Maps API',
+        'All users can search for local food trucks by name, location or time',
+        'User authentication managed with Devise',
+        'After making an account, users can save favorite trucks and see daily food truck schedule and map using the Google Maps API',
       ],
     },
     {
@@ -232,6 +258,7 @@ const data = {
       image: election,
       homeImage: electionHome,
       bulletPoints: [
+        'My first significant programming project',
         'Ruby program that pulls in polling numbers and betting odds from multiple user-defined sources',
         'Used several Ruby Gems to scrape data and interact with APIs on multiple different election websites',
       ],
@@ -246,6 +273,7 @@ const data = {
       bulletPoints: [
         'Group project, podcast review site that supports user and admin accounts',
         'Responsive interface built in Rails, with live updates using React and Foundation for styling',
+        'User authentication managed with Devise',
         'Users receive email updates when there are comments posted on their entries',
       ],
     },
@@ -257,34 +285,11 @@ const data = {
       image: pinteresting,
       homeImage: pinterestingHome,
       bulletPoints: [
-        'Imageboard site that supports user accounts and dynamically rearranges images to screen size',
+        'Imageboard site that supports user accounts and uploads',
+        'Dynamically rearranges images to screen size with animation',
         'Built using Rails, with Devise for user authentication and Bootstrap for styling',
       ],
     },
-    // {
-    //   title: 'AR Kit',
-    //   website: 'none yet',
-    //   repo: 'none yet',
-    //   date: 'Feb 2018',
-    //   image: arkit,
-    //   homeImage: arkitHome,
-    //   bulletPoints: [
-    //     'Still working on it!',
-    //     'Still working on it!',
-    //   ],
-    // },
-    // {
-    //   title: 'Virtual Rodent',
-    //   website: 'none yet',
-    //   repo: 'none yet',
-    //   date: 'Feb 2018',
-    //   image: reactVr,
-    //   homeImage: reactVr,
-    //   bulletPoints: [
-    //     'Still working on it!',
-    //     'Still working on it!',
-    //   ],
-    // },
   ],
   experience: [
     {
@@ -297,7 +302,6 @@ const data = {
         "Work closely with Intrepid's team of designers and developers to build exceptional products",
         'Build APIs, administrative tools and infrastructure to support iOS and Android mobile applications',
         'Build full-stack web applications',
-        'Lead projects and mentor junior developers',
         'Communicate project plans, progress, and scope to clients',
         'Participate in code and architecture reviews',
         "Enhance Accenture and Intrepid's knowledge of new stacks",
@@ -372,6 +376,8 @@ const data = {
       bulletPoints: [
         'Completed degree with focus on Pure Mathematics and Economics',
         'Research and classes specialized in Cryptography, Econometrics and Statistics',
+        'Steering Committee member, Peace by PEACE',
+        'Co-captain, Columbia Raas Team',
       ],
       image: columbia,
       website: 'https://www.columbia.edu',

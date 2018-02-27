@@ -42,7 +42,7 @@ a {
   padding: 0 8px; }
 
 .closeButton {
-  background-color: green;
+  background-color: mediumpurple;
   border-radius: 8px;
   color: #FFFFFF;
   display: block;
@@ -78,7 +78,7 @@ a {
   margin-bottom: 20px; }
 
 .link {
-  background-color: green;
+  background-color: mediumpurple;
   border-radius: 8px;
   color: #FFFFFF;
   display: block;
@@ -126,7 +126,7 @@ a {
   width: 100%; }
 
 .backButton {
-  background-color: green;
+  background-color: mediumpurple;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 8px;
