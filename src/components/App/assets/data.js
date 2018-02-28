@@ -37,6 +37,7 @@ import router from '../../Language/assets/router.png';
 import redux from '../../Language/assets/redux.png';
 import recompose from '../../Language/assets/recompose.png';
 import node from '../../Language/assets/node.png';
+import webpack from '../../Language/assets/webpack.png';
 import arKit from '../../Language/assets/arkit.png';
 import reactVr from '../../Language/assets/react-vr.png';
 import elixir from '../../Language/assets/elixir.png';
@@ -146,12 +147,13 @@ const data = {
     { name: 'Redux', image: redux, website: 'https://redux.js.org' },
     { name: 'Recompose', image: recompose, website: 'https://github.com/acdlite/recompose' },
     { name: 'Node', image: node, website: 'https://nodejs.org' },
+    { name: 'Webpack', image: webpack, website: 'https://webpack.js.org/' },
     { name: 'React VR', image: reactVr, website: 'https://facebook.github.io/react-vr/' },
     // { name: 'AR.js', image: arKit, website: 'https://jeromeetienne.github.io/AR.js/' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
     { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
-    { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
-    { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
+    // { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
+    // { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
     { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
     {
       name: 'PostgreSQL',
@@ -180,24 +182,21 @@ const data = {
       image: yieldbook,
       website: 'https://www.yieldbook.com',
     },
-    // { name: 'Stata', image: stata, website: 'https://www.stata.com' },
+    { name: 'Stata', image: stata, website: 'https://www.stata.com' },
   ],
   projects: [
     {
-      title: 'Tweet Bots',
-      website: 'https://twitter.com/Rahul_Dev_Acct',
-      repo: 'https://github.com/Rahul-Krishnan/TwitterBots',
-      date: 'May 2017',
-      image: tweetbots,
-      homeImage: tweetbotsHome,
+      title: 'Podcastaway',
+      website: 'https://podcastaway.herokuapp.com',
+      repo: 'https://github.com/katherine-sawyer/podcastaway',
+      date: 'Jan 2017',
+      image: podcastaway,
+      homeImage: podcastawayHome,
       bulletPoints: [
-        'A bunch of tweet bots, including:',
-        'Basic Bot, i.e. add/remove friends/posts',
-        'Mimic Bot that uses Rita and sample text',
-        'Human Emotions Bot using Google Cloud Vision API',
-        'Story Generation Bot using Tracery',
-        'Retrieve & tweet info from Google Spreadsheets',
-        'Twitter Audio Bot that composes songs',
+        'Group project, podcast review site that supports user and admin accounts',
+        'Responsive interface built in Rails, with live updates using React and Foundation for styling',
+        'User authentication managed with Devise',
+        'Users receive email updates when there are comments posted on their entries',
       ],
     },
     // {
@@ -225,18 +224,6 @@ const data = {
     //   ],
     // },
     {
-      title: 'Reduxtagram',
-      website: 'https://reduxtagram-rk.herokuapp.com/',
-      repo: 'https://github.com/Rahul-Krishnan/Reduxtagram',
-      date: 'Sep 2017',
-      image: reduxtagram,
-      homeImage: reduxtagramHome,
-      bulletPoints: [
-        'Simple Image board site built using React and Redux',
-        'Responsive design with user comment display and likes',
-      ],
-    },
-    {
       title: 'SnackTracker',
       website: 'https://snack-tracker.herokuapp.com',
       repo: 'https://github.com/rahul-krishnan/food_truck_tracker',
@@ -252,6 +239,18 @@ const data = {
       ],
     },
     {
+      title: 'Reduxtagram',
+      website: 'https://reduxtagram-rk.herokuapp.com/',
+      repo: 'https://github.com/Rahul-Krishnan/Reduxtagram',
+      date: 'Sep 2017',
+      image: reduxtagram,
+      homeImage: reduxtagramHome,
+      bulletPoints: [
+        'Simple Image board site built using React and Redux',
+        'Responsive design with user comment display and likes',
+      ],
+    },
+    {
       title: '2016 Election Tracker',
       repo: 'https://github.com/rahul-krishnan/Election-Update',
       date: 'Sep 2016',
@@ -264,17 +263,20 @@ const data = {
       ],
     },
     {
-      title: 'Podcastaway',
-      website: 'https://podcastaway.herokuapp.com',
-      repo: 'https://github.com/katherine-sawyer/podcastaway',
-      date: 'Jan 2017',
-      image: podcastaway,
-      homeImage: podcastawayHome,
+      title: 'Tweet Bots',
+      website: 'https://twitter.com/Rahul_Dev_Acct',
+      repo: 'https://github.com/Rahul-Krishnan/TwitterBots',
+      date: 'May 2017',
+      image: tweetbots,
+      homeImage: tweetbotsHome,
       bulletPoints: [
-        'Group project, podcast review site that supports user and admin accounts',
-        'Responsive interface built in Rails, with live updates using React and Foundation for styling',
-        'User authentication managed with Devise',
-        'Users receive email updates when there are comments posted on their entries',
+        'A bunch of tweet bots, including:',
+        'Basic Bot, i.e. add/remove friends/posts',
+        'Mimic Bot that uses Rita and sample text',
+        'Human Emotions Bot using Google Cloud Vision API',
+        'Story Generation Bot using Tracery',
+        'Retrieve & tweet info from Google Spreadsheets',
+        'Twitter Audio Bot that composes songs',
       ],
     },
     {
@@ -294,18 +296,18 @@ const data = {
   experience: [
     {
       company: 'Intrepid Pursuits',
-      title: 'Software Engineer',
+      title: 'Software Engineer, Web Developer',
       location: 'Cambridge, MA',
       startDate: 'Sep 2017',
       endDate: 'Present',
       bulletPoints: [
-        "Work closely with Intrepid's team of designers and developers to build exceptional products",
-        'Build APIs, administrative tools and infrastructure to support iOS and Android mobile applications',
-        'Build full-stack web applications',
-        'Communicate project plans, progress, and scope to clients',
-        'Participate in code and architecture reviews',
-        "Enhance Accenture and Intrepid's knowledge of new stacks",
-        'Participate in Agile development process',
+        'Primarily worked on a Student-Educator interaction and feedback app for a higher education institution',
+        "Worked closely with Intrepid's team of designers and developers to build exceptional products",
+        'Built APIs, administrative tools and infrastructure to support iOS and Android mobile applications',
+        'Built full-stack web applications',
+        'Communicated project plans, progress, and scope to clients',
+        'Participated in code and architecture reviews',
+        'Participated in Agile development process',
       ],
       image: intrepid,
       website: 'https://intrepid.io',
@@ -318,7 +320,8 @@ const data = {
       endDate: 'Feb 2017',
       bulletPoints: [
         'Completed an intensive programming bootcamp targeted at building software development skills',
-        'Focused on TDD, Agile methodologies, Git workflow, pair programming and continuous integration',
+        'Gained exposure to Agile methodologies, Git workflow, and continuous integration',
+        'Special focus on pair programming and test-driven development',
       ],
       image: launch,
       website: 'https://launchacademy.com',
@@ -330,7 +333,8 @@ const data = {
       startDate: 'Jul 2008',
       endDate: 'Jun 2012',
       bulletPoints: [
-        'Traded and hedged mortgage derivatives trading book',
+        'Traded and hedged mortgage derivatives trading book to maximize profitability while gaining market share',
+        'Worked closely with clients and brokers to facilitate and manage complex transactions',
         'Part of syndicate that launched the Synthetic IO (IOS)',
         'Provided pricing on mortgage products for margin calls, repo and month-end marks',
       ],
@@ -344,9 +348,10 @@ const data = {
       startDate: 'Jun 2014',
       endDate: 'Jun 2015',
       bulletPoints: [
-        'Helped build a new mortgage trading desk',
+        'Helped build a new mortgage trading desk at well-established institution',
         'Traded and hedged derivative books to maximize profitability while gaining market share',
         'Pitched trade ideas to customers, including hedge funds, money managers, mortgage servicers',
+        'Provided pricing on mortgage products for margin calls, repo and month-end marks',
       ],
       image: socGen,
       website: 'https://www.societegenerale.com',
@@ -359,6 +364,7 @@ const data = {
       endDate: 'Mar 2014',
       bulletPoints: [
         'Jointly managed fund as part of Portfolio Management team',
+        'Helped operate nascent organization through period of significant growth',
         'Presented new products and trade ideas to the team and to existing and potential investors',
         'Primary point of contact with dealers and salespeople',
       ],
@@ -375,9 +381,9 @@ const data = {
       endDate: 'May 2008',
       bulletPoints: [
         'Completed degree with focus on Pure Mathematics and Economics',
-        'Research and classes specialized in Cryptography, Econometrics and Statistics',
-        'Steering Committee member, Peace by PEACE',
-        'Co-captain, Columbia Raas Team',
+        'Research and classes specialized in Cryptography, Decision Theory, Econometrics and Statistics',
+        'Steering Committee member, Peace by PEACE, a volunteer-driven conflict resolution organization',
+        'Co-captain, Columbia Raas Team, traditional Indian dance group',
       ],
       image: columbia,
       website: 'https://www.columbia.edu',
