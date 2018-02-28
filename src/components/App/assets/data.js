@@ -195,8 +195,8 @@ const data = {
       bulletPoints: [
         'Group project, podcast review site that supports user and admin accounts',
         'Responsive interface built in Rails, with live updates using React and Foundation for styling',
-        'User authentication managed with Devise',
         'Users receive email updates when there are comments posted on their entries',
+        'User authentication managed with Devise',
       ],
     },
     // {
@@ -232,10 +232,10 @@ const data = {
       homeImage: snacktrackerHome,
       bulletPoints: [
         'Personalized daily food truck scheduling web app built using Rails and React',
+        'After making an account, users can save favorite trucks and see daily food truck schedule and map using the Google Maps API',
         'Database repopulated hourly via web scraping to keep information current',
         'All users can search for local food trucks by name, location or time',
         'User authentication managed with Devise',
-        'After making an account, users can save favorite trucks and see daily food truck schedule and map using the Google Maps API',
       ],
     },
     {
@@ -289,7 +289,8 @@ const data = {
       bulletPoints: [
         'Imageboard site that supports user accounts and uploads',
         'Dynamically rearranges images to screen size with animation',
-        'Built using Rails, with Devise for user authentication and Bootstrap for styling',
+        'Built using Rails, with Bootstrap for styling',
+        'User authentication managed with Devise',
       ],
     },
   ],
