@@ -73,8 +73,10 @@ class App extends Component {
   };
 
   render() {
+    let appStyles = `${styles.app} animated fadeIn`;
+
     return (
-      <div className={styles.app}>
+      <div className={appStyles}>
         <NavBar
           sections={data.sections}
           toggleTo={this.toggleTo}
@@ -83,7 +85,7 @@ class App extends Component {
         <HeaderSection
           data={data.sections.header}
         />
-        <div id="main">
+        <div className={styles.main}>
           <ProjectSection
             selected={this.state.projects}
             toggleTo={this.toggleTo}
@@ -118,6 +120,7 @@ class App extends Component {
         </div>
         <FooterSection
           title={data.sections.contact.title}
+          background={data.sections.contact.background}
           data={data.contact}
         />
       </div>

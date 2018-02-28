@@ -1,10 +1,9 @@
 .circleSection {
-  margin-top: -45vw;
+  text-align: center;
   z-index: -1; }
 
 .titleSection {
-  margin: 2vw 0;
-  padding: 2vw 0; }
+  padding: 4vw 0; }
 
 .sectionTitle {
   font-family: 'Pacifico', cursive;
@@ -15,7 +14,49 @@
     background: rgba(40, 40, 40, 0.8);
     cursor: pointer; }
 
-.sectionTitlePentagon {
+.sectionOpen {
+  font-family: 'Pacifico', cursive; }
+
+.chart {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto;
+  opacity: 0.8;
+  position: relative;
+  text-align: center;
+  top: -12vw;
+  width: 100%;
+  z-index: -1; }
+
+.circleDraw {
+  animation: showTop 1s;
+  height: 55vw;
+  padding: 2.2vw;
+  position: absolute;
+  margin: 0 auto;
+  stroke-dashoffset: 40vw;
+  transform: rotate(360deg);
+  width: 55vw;
+  z-index: -1; }
+
+.outer {
+  animation-play-state: running;
+  cx: 28vw;
+  cy: 26vw;
+  fill: transparent;
+  opacity: 0.8;
+  stroke: #FFFFFF;
+  stroke-width: 2vw;
+  stroke-dasharray: 170vw;
+  transition: stroke-dashoffset 4s;
+  r: 27vw;
+  z-index: -1; }
+
+@keyframes showTop {
+  from {
+    stroke-dashoffset: 170vw; } }
+
+.centerTitlePentagon {
   border-radius: 40vw;
   display: block;
   font-family: 'Pacifico', cursive;
@@ -26,46 +67,70 @@
   padding: 2.2vw;
   position: relative;
   text-align: center;
-  top: 75vw;
+  top: 41vw;
   width: 40vw;
   z-index: 1; }
-  .sectionTitlePentagon:hover {
+  .centerTitlePentagon:hover {
     background: rgba(40, 40, 40, 0.8);
     cursor: pointer; }
 
-.iconRow {
+.iconRowTop {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  padding: 5vw 0vw 0vw 0vw;
-  width: 100vw;
+  margin-top: -30vw;
+  padding: 0;
   z-index: -1; }
 
-.iconRowMedium {
+.iconRowMiddle {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0vw 6vw 7vw 6vw;
-  width: 88vw;
+  padding: 3vw 6vw 5vw 6vw;
+  z-index: -1; }
+
+.iconRowBottom {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 5vw;
   z-index: -1; }
 
 @media screen and (min-width: 720px) {
-  .circleSection {
-    margin-top: -324px; }
   .sectionTitle {
     font-size: 36px;
     padding: 15.84px; }
-  .sectionTitlePentagon {
+  .chart {
+    top: -86.4px; }
+  .circleDraw {
+    height: 396px;
+    padding: 15.84px;
+    stroke-dashoffset: 288px;
+    width: 396px; }
+  .outer {
+    cx: 201.6px;
+    cy: 187.2px;
+    stroke-width: 14.4px;
+    stroke-dasharray: 1224px;
+    r: 194.4px; }
+  @keyframes showTop {
+    from {
+      stroke-dashoffset: 1224px; } }
+  .centerTitlePentagon {
     border-radius: 288px;
+    font-family: 'Pacifico', cursive;
     font-size: 36px;
     height: 288px;
     line-height: 288px;
     padding: 15.84px;
-    top: 540px;
+    top: 295.2px;
     width: 288px; }
-  .iconRow {
-    padding: 50.4px 0px 0px 0px;
+  .iconRowTop {
+    margin-top: -216px;
     width: 720px; }
-  .iconRowMedium {
-    padding: 0px 43.2px 36px 43.2px;
-    width: 633.6px; } }
+  .iconRowMiddle {
+    padding: 21.6px 43.2px 36px 43.2px;
+    width: 633.6px; }
+  .iconRowBottom {
+    padding-top: 36px;
+    width: 720px; } }

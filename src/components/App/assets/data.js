@@ -1,6 +1,13 @@
-import headerBackground from '../../HeaderSection/assets/background.jpg';
-import overlay from '../../HeaderSection/assets/overlay.png';
-import overlayFlipped from '../../HeaderSection/assets/overlayFlipped.png';
+import headerBackground from '../../HeaderSection/assets/background.png';
+import overlay1 from '../../HeaderSection/assets/darkTriangle.png';
+import overlay2 from '../../HeaderSection/assets/yellowTriangle.png';
+import overlay3 from '../../HeaderSection/assets/greenTriangle.png';
+import overlay4 from '../../HeaderSection/assets/equiTriangle.png';
+import overlay5 from '../../HeaderSection/assets/orangeTriangle.png';
+import overlay6 from '../../HeaderSection/assets/purpleRectangle.png';
+import overlay7 from '../../HeaderSection/assets/bottomTriangle.png';
+import overlay8 from '../../HeaderSection/assets/lavenderTriangle.png';
+import overlay9 from '../../HeaderSection/assets/lightOrangeTriangle.png';
 import profilePic from '../../HeaderSection/assets/profile.jpg';
 import downArrow from './downArrow.gif';
 import election from '../../Project/assets/election3.png';
@@ -30,6 +37,9 @@ import router from '../../Language/assets/router.png';
 import redux from '../../Language/assets/redux.png';
 import recompose from '../../Language/assets/recompose.png';
 import node from '../../Language/assets/node.png';
+import webpack from '../../Language/assets/webpack.png';
+import arKit from '../../Language/assets/arkit.png';
+import reactVr from '../../Language/assets/react-vr.png';
 import elixir from '../../Language/assets/elixir.png';
 import phoenix from '../../Language/assets/phoenix.png';
 import enzyme from '../../Language/assets/enzyme.png';
@@ -55,6 +65,7 @@ import launch from '../../Job/assets/launch.png';
 import columbia from '../../School/assets/columbia.png';
 import email from '../../ContactItem/assets/email.png';
 import linkedin from '../../ContactItem/assets/linkedin.png';
+import githubWhite from '../../ContactItem/assets/github.png';
 
 const data = {
   icons: {
@@ -63,8 +74,15 @@ const data = {
   sections: {
     header: {
       background: headerBackground,
-      overlay: overlay,
-      overlayFlipped: overlayFlipped,
+      overlay1: overlay1,
+      overlay2: overlay2,
+      overlay3: overlay3,
+      overlay4: overlay4,
+      overlay5: overlay5,
+      overlay6: overlay6,
+      overlay7: overlay7,
+      overlay8: overlay8,
+      overlay9: overlay9,
       profilePic: profilePic,
       title: 'Rahul Krishnan',
       intro: {
@@ -75,9 +93,6 @@ const data = {
           'multidisciplinary',
           'a former trader',
           'into adventure RPGs',
-          'a 2nd degree Black Belt',
-          'an amateur magician',
-          'a guinea pig fan',
         ],
       },
     },
@@ -94,6 +109,7 @@ const data = {
       title: 'Education',
     },
     contact: {
+      background: headerBackground,
       title: 'Contact me',
     },
   },
@@ -131,10 +147,13 @@ const data = {
     { name: 'Redux', image: redux, website: 'https://redux.js.org' },
     { name: 'Recompose', image: recompose, website: 'https://github.com/acdlite/recompose' },
     { name: 'Node', image: node, website: 'https://nodejs.org' },
+    { name: 'Webpack', image: webpack, website: 'https://webpack.js.org/' },
+    { name: 'React VR', image: reactVr, website: 'https://facebook.github.io/react-vr/' },
+    // { name: 'AR.js', image: arKit, website: 'https://jeromeetienne.github.io/AR.js/' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
     { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
-    { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
-    { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
+    // { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
+    // { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
     { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
     {
       name: 'PostgreSQL',
@@ -149,7 +168,7 @@ const data = {
       image: googleCloud,
       website: 'https://cloud.google.com',
     },
-    { name: 'ElasticSearch', image: elastic, website: 'https://www.elastic.co' },
+    { name: 'Elastic Search', image: elastic, website: 'https://www.elastic.co' },
     {
       name: 'Bloomberg',
       image: bloomberg,
@@ -167,19 +186,6 @@ const data = {
   ],
   projects: [
     {
-      title: 'SnackTracker',
-      website: 'https://snack-tracker.herokuapp.com',
-      repo: 'https://github.com/rahul-krishnan/food_truck_tracker',
-      date: 'Feb 2017',
-      image: snacktracker,
-      homeImage: snacktrackerHome,
-      bulletPoints: [
-        'Personalized daily food truck scheduling web app built using Rails and React',
-        'Database repopulated hourly via web scraping to keep information current',
-        'Users can search for local food trucks by name, location or time, as well as save favorite trucks and see daily food truck schedule and map using the Google Maps API',
-      ],
-    },
-    {
       title: 'Podcastaway',
       website: 'https://podcastaway.herokuapp.com',
       repo: 'https://github.com/katherine-sawyer/podcastaway',
@@ -189,7 +195,71 @@ const data = {
       bulletPoints: [
         'Group project, podcast review site that supports user and admin accounts',
         'Responsive interface built in Rails, with live updates using React and Foundation for styling',
+        'User authentication managed with Devise',
         'Users receive email updates when there are comments posted on their entries',
+      ],
+    },
+    // {
+    //   title: 'AR Kit',
+    //   website: 'none yet',
+    //   repo: 'none yet',
+    //   date: 'Mar 2018',
+    //   image: arkit,
+    //   homeImage: arkitHome,
+    //   bulletPoints: [
+    //     'Still working on it!',
+    //     'Still working on it!',
+    //   ],
+    // },
+    // {
+    //   title: 'Virtual Rodent',
+    //   website: 'none yet',
+    //   repo: 'none yet',
+    //   date: 'Mar 2018',
+    //   image: reactVr,
+    //   homeImage: reactVr,
+    //   bulletPoints: [
+    //     'Still working on it!',
+    //     'Still working on it!',
+    //   ],
+    // },
+    {
+      title: 'SnackTracker',
+      website: 'https://snack-tracker.herokuapp.com',
+      repo: 'https://github.com/rahul-krishnan/food_truck_tracker',
+      date: 'Feb 2017',
+      image: snacktracker,
+      homeImage: snacktrackerHome,
+      bulletPoints: [
+        'Personalized daily food truck scheduling web app built using Rails and React',
+        'Database repopulated hourly via web scraping to keep information current',
+        'All users can search for local food trucks by name, location or time',
+        'User authentication managed with Devise',
+        'After making an account, users can save favorite trucks and see daily food truck schedule and map using the Google Maps API',
+      ],
+    },
+    {
+      title: 'Reduxtagram',
+      website: 'https://reduxtagram-rk.herokuapp.com/',
+      repo: 'https://github.com/Rahul-Krishnan/Reduxtagram',
+      date: 'Sep 2017',
+      image: reduxtagram,
+      homeImage: reduxtagramHome,
+      bulletPoints: [
+        'Simple Image board site built using React and Redux',
+        'Responsive design with user comment display and likes',
+      ],
+    },
+    {
+      title: '2016 Election Tracker',
+      repo: 'https://github.com/rahul-krishnan/Election-Update',
+      date: 'Sep 2016',
+      image: election,
+      homeImage: electionHome,
+      bulletPoints: [
+        'My first significant programming project',
+        'Ruby program that pulls in polling numbers and betting odds from multiple user-defined sources',
+        'Used several Ruby Gems to scrape data and interact with APIs on multiple different election websites',
       ],
     },
     {
@@ -217,62 +287,27 @@ const data = {
       image: pinteresting,
       homeImage: pinterestingHome,
       bulletPoints: [
-        'Imageboard site that supports user accounts and dynamically rearranges images to screen size',
+        'Imageboard site that supports user accounts and uploads',
+        'Dynamically rearranges images to screen size with animation',
         'Built using Rails, with Devise for user authentication and Bootstrap for styling',
-      ],
-    },
-    {
-      title: '2016 Election Tracker',
-      repo: 'https://github.com/rahul-krishnan/Election-Update',
-      date: 'Sep 2016',
-      image: election,
-      homeImage: electionHome,
-      bulletPoints: [
-        'Ruby program that pulls in polling numbers and betting odds from multiple user-defined sources',
-        'Used several Ruby Gems to scrape data and interact with APIs on multiple different election websites',
-      ],
-    },
-    {
-      title: 'Reduxtagram',
-      website: 'https://reduxtagram-rk.herokuapp.com/',
-      repo: 'https://github.com/Rahul-Krishnan/Reduxtagram',
-      date: 'Sep 2017',
-      image: reduxtagram,
-      homeImage: reduxtagramHome,
-      bulletPoints: [
-        'Simple Image board site built using React and Redux',
-        'Responsive design with user comments and likes',
-      ],
-    },
-    {
-      title: 'AR Kit',
-      website: 'none yet',
-      repo: 'none yet',
-      date: 'Jan 2018',
-      image: arkit,
-      homeImage: arkitHome,
-      bulletPoints: [
-        'Still working on it!',
-        'Still working on it!',
       ],
     },
   ],
   experience: [
     {
       company: 'Intrepid Pursuits',
-      title: 'Software Engineer',
+      title: 'Software Engineer, Web Developer',
       location: 'Cambridge, MA',
       startDate: 'Sep 2017',
       endDate: 'Present',
       bulletPoints: [
-        "Work closely with Intrepid's team of designers and developers to build exceptional products",
-        'Build APIs, administrative tools and infrastructure to support iOS and Android mobile applications',
-        'Build full-stack web applications',
-        'Lead projects and mentor junior developers',
-        'Communicate project plans, progress, and scope to clients',
-        'Participate in code and architecture reviews',
-        "Enhance Accenture and Intrepid's knowledge of new stacks",
-        'Participate in Agile development process',
+        'Primarily worked on a Student-Educator interaction and feedback app for a higher education institution',
+        "Worked closely with Intrepid's team of designers and developers to build exceptional products",
+        'Built APIs, administrative tools and infrastructure to support iOS and Android mobile applications',
+        'Built full-stack web applications',
+        'Communicated project plans, progress, and scope to clients',
+        'Participated in code and architecture reviews',
+        'Participated in Agile development process',
       ],
       image: intrepid,
       website: 'https://intrepid.io',
@@ -285,10 +320,26 @@ const data = {
       endDate: 'Feb 2017',
       bulletPoints: [
         'Completed an intensive programming bootcamp targeted at building software development skills',
-        'Focused on TDD, Agile methodologies, Git workflow, pair programming and continuous integration',
+        'Gained exposure to Agile methodologies, Git workflow, and continuous integration',
+        'Special focus on pair programming and test-driven development',
       ],
       image: launch,
       website: 'https://launchacademy.com',
+    },
+    {
+      company: 'Credit Suisse',
+      title: 'Trader, Associate',
+      location: 'New York, NY',
+      startDate: 'Jul 2008',
+      endDate: 'Jun 2012',
+      bulletPoints: [
+        'Traded and hedged mortgage derivatives trading book to maximize profitability while gaining market share',
+        'Worked closely with clients and brokers to facilitate and manage complex transactions',
+        'Part of syndicate that launched the Synthetic IO (IOS)',
+        'Provided pricing on mortgage products for margin calls, repo and month-end marks',
+      ],
+      image: creditSuisse,
+      website: 'https://credit-suisse.com',
     },
     {
       company: 'Société Générale',
@@ -297,9 +348,10 @@ const data = {
       startDate: 'Jun 2014',
       endDate: 'Jun 2015',
       bulletPoints: [
-        'Helped build a new mortgage trading desk',
+        'Helped build a new mortgage trading desk at well-established institution',
         'Traded and hedged derivative books to maximize profitability while gaining market share',
         'Pitched trade ideas to customers, including hedge funds, money managers, mortgage servicers',
+        'Provided pricing on mortgage products for margin calls, repo and month-end marks',
       ],
       image: socGen,
       website: 'https://www.societegenerale.com',
@@ -312,25 +364,12 @@ const data = {
       endDate: 'Mar 2014',
       bulletPoints: [
         'Jointly managed fund as part of Portfolio Management team',
+        'Helped operate nascent organization through period of significant growth',
         'Presented new products and trade ideas to the team and to existing and potential investors',
         'Primary point of contact with dealers and salespeople',
       ],
       image: cello,
       website: 'https://www.cellocapital.com',
-    },
-    {
-      company: 'Credit Suisse',
-      title: 'Trader, Associate',
-      location: 'New York, NY',
-      startDate: 'Jul 2008',
-      endDate: 'Jun 2012',
-      bulletPoints: [
-        'Traded and hedged mortgage derivatives trading book',
-        'Part of syndicate that launched the Synthetic IO (IOS)',
-        'Provided pricing on mortgage products for margin calls, repo and month-end marks',
-      ],
-      image: creditSuisse,
-      website: 'https://credit-suisse.com',
     },
   ],
   education: [
@@ -342,7 +381,9 @@ const data = {
       endDate: 'May 2008',
       bulletPoints: [
         'Completed degree with focus on Pure Mathematics and Economics',
-        'Research and classes specialized in Cryptography, Econometrics and Statistics',
+        'Research and classes specialized in Cryptography, Decision Theory, Econometrics and Statistics',
+        'Steering Committee member, Peace by PEACE, a volunteer-driven conflict resolution organization',
+        'Co-captain, Columbia Raas Team, traditional Indian dance group',
       ],
       image: columbia,
       website: 'https://www.columbia.edu',
@@ -364,7 +405,7 @@ const data = {
     {
       type: 'GitHub',
       details: 'https://github.com/rahul-krishnan',
-      image: github,
+      image: githubWhite,
     },
   ],
 };

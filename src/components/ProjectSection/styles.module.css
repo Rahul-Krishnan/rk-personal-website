@@ -3,8 +3,7 @@
   z-index: -1; }
 
 .titleSection {
-  margin: 2vw 0;
-  padding: 2vw 0; }
+  padding: 4vw 0; }
 
 .sectionTitle {
   font-family: 'Pacifico', cursive;
@@ -14,6 +13,48 @@
   .sectionTitle:hover {
     background: rgba(40, 40, 40, 0.8);
     cursor: pointer; }
+
+.sectionOpen {
+  font-family: 'Pacifico', cursive; }
+
+.chart {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto;
+  opacity: 0.8;
+  position: relative;
+  text-align: center;
+  top: 18vw;
+  width: 100%;
+  z-index: -1; }
+
+.circleDraw {
+  animation: showTop 1s;
+  height: 55vw;
+  padding: 2.2vw;
+  position: absolute;
+  margin: 0 auto;
+  stroke-dashoffset: 30vw;
+  transform: rotate(360deg);
+  width: 55vw;
+  z-index: -1; }
+
+.outer {
+  animation-play-state: running;
+  cx: 28vw;
+  cy: 26vw;
+  fill: transparent;
+  opacity: 0.8;
+  stroke: #FFFFFF;
+  stroke-width: 2vw;
+  stroke-dasharray: 170vw;
+  transition: stroke-dashoffset 4.5s;
+  r: 27vw;
+  z-index: -1; }
+
+@keyframes showTop {
+  from {
+    stroke-dashoffset: 170vw; } }
 
 .sectionTitleCircle {
   border-radius: 40vw;
@@ -26,7 +67,7 @@
   padding: 2.2vw;
   position: relative;
   text-align: center;
-  top: 68vw;
+  top: 71vw;
   width: 40vw;
   z-index: 1; }
   .sectionTitleCircle:hover {
@@ -38,7 +79,6 @@
   justify-content: space-evenly;
   margin: 0 auto;
   padding: 5vw 10vw;
-  width: 80vw;
   z-index: -1; }
 
 .iconRowWide {
@@ -46,7 +86,6 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0vw 4vw;
-  width: 92vw;
   z-index: -1; }
 
 @media screen and (min-width: 720px) {
@@ -55,16 +94,32 @@
   .sectionTitle {
     font-size: 36px;
     padding: 15.84px; }
+  .chart {
+    top: 129.6px; }
+  .circleDraw {
+    height: 396px;
+    padding: 15.84px;
+    stroke-dashoffset: 216px;
+    width: 396px; }
+  .outer {
+    animation-play-state: running;
+    cx: 201.6px;
+    cy: 187.2px;
+    stroke-width: 14.4px;
+    stroke-dasharray: 1224px;
+    r: 194.4px; }
+  @keyframes showTop {
+    from {
+      stroke-dashoffset: 1224px; } }
   .sectionTitleCircle {
     border-radius: 288px;
     font-size: 36px;
     height: 288px;
     line-height: 288px;
     padding: 15.84px;
-    top: 489.6px;
+    top: 511.2px;
     width: 288px; }
   .iconRow {
-    justify-content: space-evenly;
     padding: 36px 72px;
     width: 576px; }
   .iconRowWide {

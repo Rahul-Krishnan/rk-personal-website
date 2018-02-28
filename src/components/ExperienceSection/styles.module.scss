@@ -2,13 +2,12 @@ $baseSizeVw: 10vw;
 $baseSizePx: 72px;
 
 .circleSection {
-  margin-top: -4.5 * $baseSizeVw;
+  text-align: center;
   z-index: -1;
 }
 
 .titleSection {
-  margin: 2vw 0;
-  padding: 2vw 0;
+  padding: 0.4 * $baseSizeVw 0;
 }
 
 .sectionTitle {
@@ -23,7 +22,55 @@ $baseSizePx: 72px;
   }
 }
 
-.sectionTitlePentagon {
+.sectionOpen {
+  font-family: 'Pacifico', cursive;
+}
+
+.chart {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto;
+  opacity: 0.8;
+  position: relative;
+  text-align: center;
+  top: -1.2 * $baseSizeVw;
+  width: 100%;
+  z-index: -1;
+}
+
+.circleDraw {
+  animation: showTop 1s;
+  height: 5.5 * $baseSizeVw;
+  padding: 0.22 * $baseSizeVw;
+  position: absolute;
+  margin: 0 auto;
+  stroke-dashoffset: 4 * $baseSizeVw;
+  transform: rotate(360deg);
+  width: 5.5 * $baseSizeVw;
+  z-index: -1;
+}
+
+.outer {
+  animation-play-state: running;
+  cx: 2.8 * $baseSizeVw;
+  cy: 2.6 * $baseSizeVw;
+  fill: transparent;
+  opacity: 0.8;
+  stroke: #FFFFFF;
+  stroke-width: 0.2 * $baseSizeVw;
+  stroke-dasharray: 17 * $baseSizeVw;
+  transition: stroke-dashoffset 4s;
+  r: 2.7 * $baseSizeVw;
+  z-index: -1;
+}
+
+@keyframes showTop {
+  from {
+    stroke-dashoffset: 17 * $baseSizeVw;
+  }
+}
+
+.centerTitlePentagon {
   border-radius: 4 * $baseSizeVw;
   display: block;
   font-family: 'Pacifico', cursive;
@@ -34,7 +81,7 @@ $baseSizePx: 72px;
   padding: 0.22 * $baseSizeVw;
   position: relative;
   text-align: center;
-  top: 7.5 * $baseSizeVw;
+  top: 4.1 * $baseSizeVw;
   width: 4 * $baseSizeVw;
   z-index: 1;
 
@@ -44,51 +91,86 @@ $baseSizePx: 72px;
   }
 }
 
-.iconRow {
+.iconRowTop {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  padding: 0.5 * $baseSizeVw 0 * $baseSizeVw 0 * $baseSizeVw 0 * $baseSizeVw;
-  width: 10 * $baseSizeVw;
+  margin-top: -3 * $baseSizeVw;
+  padding: 0;
   z-index: -1;
 }
 
-.iconRowMedium {
+.iconRowMiddle {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 * $baseSizeVw 0.6 * $baseSizeVw 0.7 * $baseSizeVw 0.6 * $baseSizeVw;
-  width: 8.8 * $baseSizeVw;
+  padding: 0.3 * $baseSizeVw 0.6 * $baseSizeVw 0.5 * $baseSizeVw 0.6 * $baseSizeVw;
+  z-index: -1;
+}
+
+.iconRowBottom {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 0.5 * $baseSizeVw;
   z-index: -1;
 }
 
 @media screen and (min-width: 720px) {
-  .circleSection {
-    margin-top: -4.5 * $baseSizePx;
-  }
-
   .sectionTitle {
     font-size: 0.5 * $baseSizePx;
     padding: 0.22 * $baseSizePx;
   }
 
-  .sectionTitlePentagon {
+  .chart {
+    top: -1.2 * $baseSizePx;
+  }
+
+  .circleDraw {
+    height: 5.5 * $baseSizePx;
+    padding: 0.22 * $baseSizePx;
+    stroke-dashoffset: 4 * $baseSizePx;
+    width: 5.5 * $baseSizePx;
+  }
+
+  .outer {
+    cx: 2.8 * $baseSizePx;
+    cy: 2.6 * $baseSizePx;
+    stroke-width: 0.2 * $baseSizePx;
+    stroke-dasharray: 17 * $baseSizePx;
+    r: 2.7 * $baseSizePx;
+  }
+
+  @keyframes showTop {
+    from {
+      stroke-dashoffset: 17 * $baseSizePx;
+    }
+  }
+
+  .centerTitlePentagon {
     border-radius: 4 * $baseSizePx;
+    font-family: 'Pacifico', cursive;
     font-size: 0.5 * $baseSizePx;
     height: 4 * $baseSizePx;
     line-height: 4 * $baseSizePx;
     padding: 0.22 * $baseSizePx;
-    top: 7.5 * $baseSizePx;
+    top: 4.1 * $baseSizePx;
     width: 4 * $baseSizePx;
   }
 
-  .iconRow {
-    padding: 0.7 * $baseSizePx 0 * $baseSizePx 0 * $baseSizePx 0 * $baseSizePx;
+
+  .iconRowTop {
+    margin-top: -3 * $baseSizePx;
     width: 10 * $baseSizePx;
   }
 
-  .iconRowMedium {
-    padding: 0 * $baseSizePx 0.6 * $baseSizePx 0.5 * $baseSizePx 0.6 * $baseSizePx;
+  .iconRowMiddle {
+    padding: 0.3 * $baseSizePx 0.6 * $baseSizePx 0.5 * $baseSizePx 0.6 * $baseSizePx;
     width: 8.8 * $baseSizePx;
+  }
+
+  .iconRowBottom {
+    padding-top: 0.5 * $baseSizePx;
+    width: 10 * $baseSizePx;
   }
 }

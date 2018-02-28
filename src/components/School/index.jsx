@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import styles from './styles.module.css';
 import PreviewIcon from '../PreviewIcon/';
 import Modal from 'react-modal';
@@ -76,6 +76,9 @@ class School extends Component {
       downArrow,
     } = this.props;
 
+    const lineContainerStyle = `${styles.lineContainer} animated zoomIn`;
+    const vw = window.innerWidth / 100;
+
     return (
       <div>
         <div onClick={this.expandModal}>
@@ -110,9 +113,20 @@ class School extends Component {
             <div className={styles.details}>{degree}</div>
             <div className={styles.bulletSection}>
               {bulletPoints.map(line => (
-                <div className={styles.bullet} key={line}>
-                  ● {line}
-                </div>
+                <Fragment key={line}>
+                  <div className={styles.bullet}>
+                    {line}
+                  </div>
+                  <svg className={lineContainerStyle}>
+                    <line
+                      className={styles.line}
+                      x1="0"
+                      y1="0"
+                      x2={`${10 * vw}`}
+                      y2="0"
+                    />
+                  </svg>
+                </Fragment>
               ))}
             </div>
           </div>

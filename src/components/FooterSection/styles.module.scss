@@ -1,9 +1,21 @@
 .footer {
-  background-color: sienna;
   color: #FFFFFF;
   min-height: 45vh;
+  overflow: hidden;
   padding: 24px;
+  position: relative;
   text-align: center;
+}
+
+.background {
+  height: 220%;
+  right: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: -38%;
+  transform: scaleY(-1);
+  width: 120%;
+  z-index: -1;
 }
 
 .footerTitle {

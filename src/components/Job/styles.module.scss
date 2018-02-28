@@ -47,7 +47,7 @@ a {
 }
 
 .closeButton {
-  background-color: sienna;
+  background-color: mediumpurple;
   border-radius: 8px;
   color: #FFFFFF;
   display: block;
@@ -65,6 +65,7 @@ a {
 }
 
 .icon {
+  max-width: 200px;
   width: 20vw;
 }
 
@@ -81,6 +82,12 @@ a {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .title {
+     font-size: 48px;
+  }
+}
+
 .details {
   padding-bottom: 8px;
 }
@@ -90,7 +97,24 @@ a {
 }
 
 .bullet {
-  padding-bottom: 16px;
+  padding-bottom: 6px;
+}
+
+.lineContainer {
+  animation-delay: 1s;
+  height: 8px;
+  margin: 0 auto;
+  width: 10vw;
+
+  &:last-child {
+    display: none;
+  }
+}
+
+.line {
+  margin: 0 auto;
+  stroke-width: 4px;
+  stroke: black;
 }
 
 .more {
@@ -115,7 +139,7 @@ a {
 }
 
 .backButton {
-  background-color: sienna;
+  background-color: mediumpurple;
   border-radius: 8px;
   color: #FFFFFF;
   margin: 8px;

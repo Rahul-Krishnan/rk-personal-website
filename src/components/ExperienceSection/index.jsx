@@ -5,8 +5,8 @@ import Job from '../Job/';
 class ExperienceSection extends Component {
   render() {
     let titleInitial = `${styles.sectionTitle} animated fadeInUp`;
-    let sectionOpen = 'animated zoomIn';
-    let centerTitlePentagon = `${styles.sectionTitlePentagon} animated fadeInDown`;
+    let sectionOpen = `${styles.sectionOpen} animated zoomIn`;
+    let centerTitlePentagon = `${styles.centerTitlePentagon} animated fadeInDown`;
     let { selected, title, data, toggleTo, toggleSection, downArrow } = this.props
 
     if (selected) {
@@ -21,7 +21,12 @@ class ExperienceSection extends Component {
             {title}
           </div>
           <div className={sectionOpen}>
-            <div className={styles.iconRow} id="experience">
+            <figure className={styles.chart}>
+              <svg className={styles.circleDraw}>
+                <circle className={styles.outer}/>
+              </svg>
+            </figure>
+            <div className={styles.iconRowTop} id="experience">
               {data
                 .slice(0, 1)
                 .map(job => (
@@ -39,7 +44,7 @@ class ExperienceSection extends Component {
                   />
                 ))}
             </div>
-            <div className={styles.iconRowMedium}>
+            <div className={styles.iconRowMiddle}>
               {data
                 .slice(1, 3)
                 .map(job => (
@@ -57,7 +62,7 @@ class ExperienceSection extends Component {
                   />
                 ))}
             </div>
-            <div className={styles.iconRow}>
+            <div className={styles.iconRowBottom}>
               {data
                 .slice(3, 5)
                 .map(job => (

@@ -8,8 +8,7 @@
   height: 100%; }
 
 .titleSection {
-  margin: 2vw 0;
-  padding: 2vw 0; }
+  padding: 4vw 0; }
 
 .sectionTitle {
   font-family: 'Pacifico', cursive;
@@ -22,4 +21,5 @@
 
 @media screen and (min-width: 720px) {
   .sectionTitle {
-    font-size: 36px; } }
+    font-size: 36px;
+    padding: 15.84px; } }
