@@ -16,14 +16,13 @@ import podcastaway from '../../Project/assets/podcastaway.png';
 import reduxtagram from '../../Project/assets/reduxtagram.png';
 import snacktracker from '../../Project/assets/snacktracker.png';
 import tweetbots from '../../Project/assets/tweetbots.png';
-import arkitHome from '../../Project/assets/arkitHome.png';
+import arKitHome from '../../Project/assets/arkitHome.png';
 import electionHome from '../../Project/assets/electionHome.png';
 import pinterestingHome from '../../Project/assets/pinterestingHome.png';
 import podcastawayHome from '../../Project/assets/podcastawayHome.png';
 import reduxtagramHome from '../../Project/assets/reduxtagramHome.png';
 import snacktrackerHome from '../../Project/assets/snacktrackerHome.png';
 import tweetbotsHome from '../../Project/assets/tweetbotsHome.png';
-import arkit from '../../Project/assets/arkit.png';
 import html from '../../Language/assets/html.png';
 import css from '../../Language/assets/css.png';
 import sass from '../../Language/assets/sass.png';
@@ -139,22 +138,22 @@ const data = {
       website: 'http://teamcapybara.github.io/capybara',
     },
     { name: 'React', image: react, website: 'https://reactjs.org' },
-    {
-      name: 'React Router',
-      image: router,
-      website: 'https://reacttraining.com/react-router',
-    },
+    // {
+    //   name: 'React Router',
+    //   image: router,
+    //   website: 'https://reacttraining.com/react-router',
+    // },
     { name: 'Redux', image: redux, website: 'https://redux.js.org' },
     { name: 'Recompose', image: recompose, website: 'https://github.com/acdlite/recompose' },
     { name: 'Node', image: node, website: 'https://nodejs.org' },
-    { name: 'Webpack', image: webpack, website: 'https://webpack.js.org/' },
+    // { name: 'Webpack', image: webpack, website: 'https://webpack.js.org/' },
     { name: 'React VR', image: reactVr, website: 'https://facebook.github.io/react-vr/' },
     // { name: 'AR.js', image: arKit, website: 'https://jeromeetienne.github.io/AR.js/' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
-    { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
+    // { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
     // { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
     // { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
-    { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
+    // { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
     {
       name: 'PostgreSQL',
       image: postgres,
@@ -175,14 +174,14 @@ const data = {
       website: 'https://www.bloomberg.com',
     },
     { name: 'Reuters', image: reuters, website: 'https://www.reuters.com' },
-    { name: 'Tradeweb', image: tradeweb, website: 'https://www.tradeweb.com' },
+    // { name: 'Tradeweb', image: tradeweb, website: 'https://www.tradeweb.com' },
     { name: 'Intex', image: intex, website: 'http://www.intex.com/main' },
     {
       name: 'Yield Book',
       image: yieldbook,
       website: 'https://www.yieldbook.com',
     },
-    { name: 'Stata', image: stata, website: 'https://www.stata.com' },
+    // { name: 'Stata', image: stata, website: 'https://www.stata.com' },
   ],
   projects: [
     {
@@ -204,8 +203,8 @@ const data = {
     //   website: 'none yet',
     //   repo: 'none yet',
     //   date: 'Mar 2018',
-    //   image: arkit,
-    //   homeImage: arkitHome,
+    //   image: arKit,
+    //   homeImage: arKitHome,
     //   bulletPoints: [
     //     'Still working on it!',
     //     'Still working on it!',
