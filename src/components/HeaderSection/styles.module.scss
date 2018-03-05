@@ -211,7 +211,7 @@
 
 .profilePic {
   border-radius: 100%;
-  filter: grayscale(50%);
+  filter: grayscale(30%);
   height: 50%;
   margin-top: 15vh;
   max-height: 350px;
@@ -219,7 +219,7 @@
 }
 
 .title {
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Acme', sans-serif;
   font-size: 7.5vw;
   margin: 1.5vw auto;
 }

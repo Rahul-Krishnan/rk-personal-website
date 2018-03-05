@@ -43,6 +43,7 @@ import elixir from '../../Language/assets/elixir.png';
 import phoenix from '../../Language/assets/phoenix.png';
 import enzyme from '../../Language/assets/enzyme.png';
 import jest from '../../Language/assets/jest.png';
+import heroku from '../../Language/assets/heroku.png';
 import aws from '../../Language/assets/aws.png';
 import googleCloud from '../../Language/assets/googlecloud.png';
 import elastic from '../../Language/assets/elastic.png';
@@ -138,11 +139,11 @@ const data = {
       website: 'http://teamcapybara.github.io/capybara',
     },
     { name: 'React', image: react, website: 'https://reactjs.org' },
-    // {
-    //   name: 'React Router',
-    //   image: router,
-    //   website: 'https://reacttraining.com/react-router',
-    // },
+    {
+      name: 'React Router',
+      image: router,
+      website: 'https://reacttraining.com/react-router',
+    },
     { name: 'Redux', image: redux, website: 'https://redux.js.org' },
     { name: 'Recompose', image: recompose, website: 'https://github.com/acdlite/recompose' },
     { name: 'Node', image: node, website: 'https://nodejs.org' },
@@ -150,10 +151,10 @@ const data = {
     { name: 'React VR', image: reactVr, website: 'https://facebook.github.io/react-vr/' },
     // { name: 'AR.js', image: arKit, website: 'https://jeromeetienne.github.io/AR.js/' },
     { name: 'Enzyme', image: enzyme, website: 'http://airbnb.io/enzyme/' },
-    // { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
+    { name: 'Jest', image: jest, website: 'https://facebook.github.io/jest' },
     // { name: 'Elixir', image: elixir, website: 'https://elixir-lang.org/' },
     // { name: 'Phoenix', image: phoenix, website: 'http://phoenixframework.org/' },
-    // { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
+    { name: 'SQL', image: sql, website: 'https://en.wikipedia.org/wiki/SQL' },
     {
       name: 'PostgreSQL',
       image: postgres,
@@ -161,6 +162,7 @@ const data = {
     },
     { name: 'Git', image: git, website: 'https://git-scm.com' },
     { name: 'GitHub', image: github, website: 'https://github.com/' },
+    { name: 'Heroku', image: heroku, website: 'https://www.heroku.com' },
     { name: 'Amazon Web Services', image: aws, website: 'https://aws.amazon.com' },
     {
       name: 'Google Cloud',
@@ -174,14 +176,14 @@ const data = {
       website: 'https://www.bloomberg.com',
     },
     { name: 'Reuters', image: reuters, website: 'https://www.reuters.com' },
-    // { name: 'Tradeweb', image: tradeweb, website: 'https://www.tradeweb.com' },
+    { name: 'Tradeweb', image: tradeweb, website: 'https://www.tradeweb.com' },
     { name: 'Intex', image: intex, website: 'http://www.intex.com/main' },
     {
       name: 'Yield Book',
       image: yieldbook,
       website: 'https://www.yieldbook.com',
     },
-    // { name: 'Stata', image: stata, website: 'https://www.stata.com' },
+    { name: 'Stata', image: stata, website: 'https://www.stata.com' },
   ],
   projects: [
     {

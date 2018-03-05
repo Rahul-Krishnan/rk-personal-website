@@ -6,7 +6,7 @@
   padding: 4vw 0; }
 
 .sectionTitle {
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Acme', sans-serif;
   font-size: 6vw;
   padding: 2.2vw;
   text-align: center; }
@@ -15,7 +15,7 @@
     cursor: pointer; }
 
 .sectionOpen {
-  font-family: 'Prompt', sans-serif; }
+  font-family: 'Acme', sans-serif; }
 
 .chart {
   display: inline-flex;
@@ -59,7 +59,7 @@
 .sectionTitleCircle {
   border-radius: 40vw;
   display: block;
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Acme', sans-serif;
   font-size: 6vw;
   height: 40vw;
   line-height: 40vw;
