@@ -8,7 +8,7 @@ class HeaderSection extends Component {
   }
 
   setOverlayMovement = () => {
-    let overlaySet = document.querySelector(`#overlaySet`);
+    // let overlaySet = document.querySelector(`#overlaySet`);
     let background = document.querySelector(`#background`);
     let header = document.querySelector(`#header`);
     header.onmousemove = event => {
@@ -17,22 +17,22 @@ class HeaderSection extends Component {
 
       let mouseX = event.clientX / windowWidth;
       let mouseY = event.clientY / windowHeight;
-      overlaySet.style.transform = `translate3d(${5 - 10 * mouseX}%, ${5 - 10 * mouseY}%, 0)`;
-      background.style.transform = `translate3d(${1 * mouseX}%, ${1 * mouseY}%, 0)`;
+      // overlaySet.style.transform = `translate3d(${5 - 10 * mouseX}%, ${5 - 10 * mouseY}%, 0)`;
+      background.style.transform = `translate3d(${-1 * mouseX}%, ${-1 * mouseY}%, 0)`;
     };
   }
 
   render() {
     let backgroundStyle = `${styles.background} animated`;
-    let overlayStyle1 = `${styles.overlay1} animated slideInRight`;
-    let overlayStyle2 = `${styles.overlay2} animated slideInLeft`;
-    let overlayStyle3 = `${styles.overlay3} animated slideInRight`;
-    let overlayStyle4 = `${styles.overlay4} animated slideInLeft`;
-    let overlayStyle5 = `${styles.overlay5} animated slideInLeft`;
-    let overlayStyle6 = `${styles.overlay6} animated slideInLeft`;
-    let overlayStyle7 = `${styles.overlay7} animated slideInRight`;
-    let overlayStyle8 = `${styles.overlay8} animated slideInRight`;
-    let overlayStyle9 = `${styles.overlay9} animated slideInLeft`;
+    // let overlayStyle1 = `${styles.overlay1} animated slideInRight`;
+    // let overlayStyle2 = `${styles.overlay2} animated slideInLeft`;
+    // let overlayStyle3 = `${styles.overlay3} animated slideInRight`;
+    // let overlayStyle4 = `${styles.overlay4} animated slideInLeft`;
+    // let overlayStyle5 = `${styles.overlay5} animated slideInLeft`;
+    // let overlayStyle6 = `${styles.overlay6} animated slideInLeft`;
+    // let overlayStyle7 = `${styles.overlay7} animated slideInRight`;
+    // let overlayStyle8 = `${styles.overlay8} animated slideInRight`;
+    // let overlayStyle9 = `${styles.overlay9} animated slideInLeft`;
     let profileStyle = `${styles.profilePic} animated zoomIn`;
     let nameStyle = `${styles.title} animated fadeInUp`;
 
@@ -60,7 +60,7 @@ class HeaderSection extends Component {
           alt={title}
           src={background}
         />
-        <div className={styles.overlaySet} id="overlaySet">
+        {/* <div className={styles.overlaySet} id="overlaySet">
           <img className={overlayStyle1} alt="overlay1" src={overlay1} />
           <img className={overlayStyle2} alt="overlay2" src={overlay2} />
           <img className={overlayStyle3} alt="overlay3" src={overlay3} />
@@ -70,7 +70,7 @@ class HeaderSection extends Component {
           <img className={overlayStyle7} alt="overlay7" src={overlay7} />
           <img className={overlayStyle8} alt="overlay8" src={overlay8} />
           <img className={overlayStyle9} alt="overlay9" src={overlay9} />
-        </div>
+        </div> */}
         <img className={profileStyle} alt={title} src={profilePic} />
         <h1 className={nameStyle}>{title}</h1>
         <IntroText text={intro}/>
