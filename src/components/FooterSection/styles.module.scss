@@ -1,3 +1,6 @@
+$baseSizeVw: 10vw;
+$baseSizePx: 72px;
+
 .footer {
   color: #FFFFFF;
   min-height: 45vh;
@@ -19,14 +22,14 @@
 }
 
 .footerTitle {
-  font-family: 'Pacifico', cursive;
-  font-size: 5vw;
+  font-family: 'Prompt', sans-serif;
+  font-size: 0.6 * $baseSizeVw;
   padding: 16px;
   text-align: center;
 }
 
 @media screen and (min-width: 720px) {
   .footerTitle {
-     font-size: 36px;
+     font-size: 0.6 * $baseSizePx;
   }
 }

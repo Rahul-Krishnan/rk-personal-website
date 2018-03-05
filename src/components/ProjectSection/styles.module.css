@@ -6,8 +6,8 @@
   padding: 4vw 0; }
 
 .sectionTitle {
-  font-family: 'Pacifico', cursive;
-  font-size: 5vw;
+  font-family: 'Prompt', sans-serif;
+  font-size: 6vw;
   padding: 2.2vw;
   text-align: center; }
   .sectionTitle:hover {
@@ -15,7 +15,7 @@
     cursor: pointer; }
 
 .sectionOpen {
-  font-family: 'Pacifico', cursive; }
+  font-family: 'Prompt', sans-serif; }
 
 .chart {
   display: inline-flex;
@@ -59,8 +59,8 @@
 .sectionTitleCircle {
   border-radius: 40vw;
   display: block;
-  font-family: 'Pacifico', cursive;
-  font-size: 5vw;
+  font-family: 'Prompt', sans-serif;
+  font-size: 6vw;
   height: 40vw;
   line-height: 40vw;
   margin: 0 auto;
@@ -92,7 +92,7 @@
   .circleSection {
     margin-top: -324px; }
   .sectionTitle {
-    font-size: 36px;
+    font-size: 43.2px;
     padding: 15.84px; }
   .chart {
     top: 129.6px; }
@@ -113,7 +113,7 @@
       stroke-dashoffset: 1224px; } }
   .sectionTitleCircle {
     border-radius: 288px;
-    font-size: 36px;
+    font-size: 43.2px;
     height: 288px;
     line-height: 288px;
     padding: 15.84px;

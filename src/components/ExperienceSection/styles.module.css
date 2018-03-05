@@ -6,8 +6,8 @@
   padding: 4vw 0; }
 
 .sectionTitle {
-  font-family: 'Pacifico', cursive;
-  font-size: 5vw;
+  font-family: 'Prompt', sans-serif;
+  font-size: 6vw;
   padding: 2.2vw;
   text-align: center; }
   .sectionTitle:hover {
@@ -15,7 +15,7 @@
     cursor: pointer; }
 
 .sectionOpen {
-  font-family: 'Pacifico', cursive; }
+  font-family: 'Prompt', sans-serif; }
 
 .chart {
   display: inline-flex;
@@ -59,8 +59,8 @@
 .centerTitlePentagon {
   border-radius: 40vw;
   display: block;
-  font-family: 'Pacifico', cursive;
-  font-size: 5vw;
+  font-family: 'Prompt', sans-serif;
+  font-size: 6vw;
   height: 40vw;
   line-height: 40vw;
   margin: 0 auto;
@@ -98,7 +98,7 @@
 
 @media screen and (min-width: 720px) {
   .sectionTitle {
-    font-size: 36px;
+    font-size: 43.2px;
     padding: 15.84px; }
   .chart {
     top: -86.4px; }
@@ -118,8 +118,8 @@
       stroke-dashoffset: 1224px; } }
   .centerTitlePentagon {
     border-radius: 288px;
-    font-family: 'Pacifico', cursive;
-    font-size: 36px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 43.2px;
     height: 288px;
     line-height: 288px;
     padding: 15.84px;

@@ -1,5 +1,5 @@
 $wordHeightVw: 5vw;
-$wordHeightPx: 36px;
+$wordHeightPx: 42px;
 
 .container {
   display: flex;
@@ -56,7 +56,7 @@ $wordHeightPx: 36px;
     83.3% { top: -4 * $wordHeightVw; }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 840px) {
   .container {
     font-size: 3/5 * $wordHeightPx;
     height: $wordHeightPx;

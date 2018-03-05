@@ -11,8 +11,8 @@ $baseSizePx: 72px;
 }
 
 .sectionTitle {
-  font-family: 'Pacifico', cursive;
-  font-size: 0.5 * $baseSizeVw;
+  font-family: 'Prompt', sans-serif;
+  font-size: 0.6 * $baseSizeVw;
   padding: 0.22 * $baseSizeVw;
   text-align: center;
 
@@ -23,7 +23,7 @@ $baseSizePx: 72px;
 }
 
 .sectionOpen {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Prompt', sans-serif;
 }
 
 .chart {
@@ -73,8 +73,8 @@ $baseSizePx: 72px;
 .sectionTitleCircle {
   border-radius: 4 * $baseSizeVw;
   display: block;
-  font-family: 'Pacifico', cursive;
-  font-size: 0.5 * $baseSizeVw;
+  font-family: 'Prompt', sans-serif;
+  font-size: 0.6 * $baseSizeVw;
   height: 4 * $baseSizeVw;
   line-height: 4 * $baseSizeVw;
   margin: 0 auto;
@@ -113,7 +113,7 @@ $baseSizePx: 72px;
   }
 
   .sectionTitle {
-    font-size: 0.5 * $baseSizePx;
+    font-size: 0.6 * $baseSizePx;
     padding: 0.22 * $baseSizePx;
   }
 
@@ -145,7 +145,7 @@ $baseSizePx: 72px;
 
   .sectionTitleCircle {
     border-radius: 4 * $baseSizePx;
-    font-size: 0.5 * $baseSizePx;
+    font-size: 0.6 * $baseSizePx;
     height: 4 * $baseSizePx;
     line-height: 4 * $baseSizePx;
     padding: 0.22 * $baseSizePx;

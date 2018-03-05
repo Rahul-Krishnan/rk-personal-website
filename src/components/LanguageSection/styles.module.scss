@@ -16,8 +16,8 @@ $baseSizePx: 72px;
 }
 
 .sectionTitle {
-  font-family: 'Pacifico', cursive;
-  font-size: 0.5 * $baseSizeVw;
+  font-family: 'Prompt', sans-serif;
+  font-size: 0.6 * $baseSizeVw;
   padding: 0.22 * $baseSizeVw;
   text-align: center;
 
@@ -29,7 +29,7 @@ $baseSizePx: 72px;
 
 @media screen and (min-width: 720px) {
   .sectionTitle {
-    font-size: 0.5 * $baseSizePx;
+    font-size: 0.6 * $baseSizePx;
     padding: 0.22 * $baseSizePx;
   }
 }

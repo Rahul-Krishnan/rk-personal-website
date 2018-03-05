@@ -3,7 +3,7 @@
   background: radial-gradient(circle farthest-side at center, white 0%, #444444 100%);
   border-radius: 20vw;
   display: flex;
-  font-family: Helvetica;
+  font-family: 'Lato', sans-serif;
   height: 20vw;
   padding: 2vw;
   width: 20vw; }

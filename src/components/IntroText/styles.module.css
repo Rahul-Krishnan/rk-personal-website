@@ -53,30 +53,30 @@
   83.3% {
     top: -20vw; } }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 840px) {
   .container {
-    font-size: 21.6px;
-    height: 36px;
-    padding-left: 72px;
-    padding-top: 21.6px;
-    width: 360px; }
+    font-size: 25.2px;
+    height: 42px;
+    padding-left: 84px;
+    padding-top: 25.2px;
+    width: 420px; }
   .anchor {
-    height: 36px;
-    width: 57.6px; }
+    height: 42px;
+    width: 67.2px; }
   .rotateSection {
-    height: 36px; }
+    height: 42px; }
   .word {
-    height: 36px; }
+    height: 42px; }
   @keyframes move {
     0% {
       top: 0; }
     16.7% {
       top: 0; }
     33.3% {
-      top: -36px; }
+      top: -42px; }
     50% {
-      top: -72px; }
+      top: -84px; }
     66.7% {
-      top: -108px; }
+      top: -126px; }
     83.3% {
-      top: -144px; } } }
+      top: -168px; } } }

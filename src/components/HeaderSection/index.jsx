@@ -4,10 +4,10 @@ import IntroText from '../IntroText/';
 
 class HeaderSection extends Component {
   componentDidMount() {
-    this.setOverlayMovement();
+    this.setBackgroundMovement();
   }
 
-  setOverlayMovement = () => {
+  setBackgroundMovement = () => {
     // let overlaySet = document.querySelector(`#overlaySet`);
     let background = document.querySelector(`#background`);
     let header = document.querySelector(`#header`);
