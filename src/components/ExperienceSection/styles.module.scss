@@ -41,27 +41,26 @@ $baseSizePx: 72px;
 
 .circleDraw {
   animation: showTop 1s;
-  height: 5.5 * $baseSizeVw;
+  height: 5.6 * $baseSizeVw;
+  left: 50%;
+  margin: 0 auto;
   padding: 0.22 * $baseSizeVw;
   position: absolute;
-  margin: 0 auto;
   stroke-dashoffset: 4 * $baseSizeVw;
-  transform: rotate(360deg);
-  width: 5.5 * $baseSizeVw;
+  text-align: center;
+  transform: rotate(360deg) translate(-50%);
+  width: 5.6 * $baseSizeVw;
   z-index: -1;
 }
 
 .outer {
   animation-play-state: running;
-  cx: 2.8 * $baseSizeVw;
-  cy: 2.6 * $baseSizeVw;
   fill: transparent;
+  margin: 0 auto;
   opacity: 0.8;
   stroke: #FFFFFF;
   stroke-width: 0.2 * $baseSizeVw;
-  stroke-dasharray: 17 * $baseSizeVw;
   transition: stroke-dashoffset 4s;
-  r: 2.7 * $baseSizeVw;
   z-index: -1;
 }
 
@@ -133,18 +132,14 @@ $baseSizePx: 72px;
   }
 
   .circleDraw {
-    height: 5.5 * $baseSizePx;
+    height: 5.6 * $baseSizePx;
     padding: 0.22 * $baseSizePx;
     stroke-dashoffset: 4 * $baseSizePx;
-    width: 5.5 * $baseSizePx;
+    width: 5.6 * $baseSizePx;
   }
 
   .outer {
-    cx: 2.8 * $baseSizePx;
-    cy: 2.6 * $baseSizePx;
     stroke-width: 0.2 * $baseSizePx;
-    stroke-dasharray: 17 * $baseSizePx;
-    r: 2.7 * $baseSizePx;
   }
 
   @keyframes showTop {

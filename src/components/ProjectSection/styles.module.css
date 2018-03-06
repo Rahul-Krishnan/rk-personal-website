@@ -30,26 +30,24 @@
 
 .circleDraw {
   animation: showTop 1s;
-  height: 55vw;
+  height: 56vw;
+  left: 50%;
+  margin: 0 auto;
   padding: 2.2vw;
   position: absolute;
-  margin: 0 auto;
   stroke-dashoffset: 30vw;
-  transform: rotate(360deg);
-  width: 55vw;
+  text-align: center;
+  transform: rotate(360deg) translate(-50%);
+  width: 56vw;
   z-index: -1; }
 
 .outer {
   animation-play-state: running;
-  cx: 28vw;
-  cy: 26vw;
   fill: transparent;
   opacity: 0.8;
   stroke: #FFFFFF;
   stroke-width: 2vw;
-  stroke-dasharray: 170vw;
   transition: stroke-dashoffset 4.5s;
-  r: 27vw;
   z-index: -1; }
 
 @keyframes showTop {
@@ -97,17 +95,12 @@
   .chart {
     top: 129.6px; }
   .circleDraw {
-    height: 396px;
+    height: 403.2px;
     padding: 15.84px;
     stroke-dashoffset: 216px;
-    width: 396px; }
+    width: 403.2px; }
   .outer {
-    animation-play-state: running;
-    cx: 201.6px;
-    cy: 187.2px;
-    stroke-width: 14.4px;
-    stroke-dasharray: 1224px;
-    r: 194.4px; }
+    stroke-width: 14.4px; }
   @keyframes showTop {
     from {
       stroke-dashoffset: 1224px; } }
