@@ -12,8 +12,9 @@
 
 .navbarItem {
   display: inline-flex;
-  font-size: 2vw;
+  font-size: 3vw;
   padding: 8px;
+  text-align: center;
 
   &:hover {
     background: rgba(100, 100, 100, 0.8);
@@ -21,7 +22,7 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 666px) {
   .navbarItem {
      font-size: 20px;
   }
