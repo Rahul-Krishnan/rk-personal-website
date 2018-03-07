@@ -43,7 +43,7 @@ class App extends Component {
   doScroll = section => {
     $('html,body').animate(
       {
-        scrollTop: $(`#${section}`).offset().top - 20,
+        scrollTop: $(`#${section}`).offset().top - 40,
       },
       500,
     );
