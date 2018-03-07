@@ -1,3 +1,5 @@
+$margin-top: calc();
+
 .header {
   color: #FFFFFF;
   height: 90vh;
@@ -213,15 +215,15 @@
   border-radius: 100%;
   filter: grayscale(30%);
   height: 50%;
-  margin-top: 15vh;
   max-height: 350px;
   z-index: 3;
 }
 
 .title {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 7.5vw;
-  margin: 1.5vw auto;
+  margin: 0 auto;
+  margin-bottom: 1.5vh;
 }
 
 @media screen and (min-width: 720px) {

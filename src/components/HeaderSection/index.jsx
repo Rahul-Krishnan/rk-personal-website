@@ -3,8 +3,21 @@ import styles from './styles.module.css';
 import IntroText from '../IntroText/';
 
 class HeaderSection extends Component {
+  state = {
+    marginTop: 0,
+  }
+
   componentDidMount() {
+    this.calcMarginTop();
     this.setBackgroundMovement();
+    window.addEventListener("resize", this.calcMarginTop);
+  }
+
+  calcMarginTop = () => {
+    let vh = window.innerHeight / 100;
+    let vw = window.innerWidth / 100;
+    let marginTop = Math.min(20 * vh, 30 * vw)
+    this.setState({ marginTop: marginTop })
   }
 
   setBackgroundMovement = () => {
@@ -34,7 +47,7 @@ class HeaderSection extends Component {
     // let overlayStyle8 = `${styles.overlay8} animated slideInRight`;
     // let overlayStyle9 = `${styles.overlay9} animated slideInLeft`;
     let profileStyle = `${styles.profilePic} animated zoomIn`;
-    let nameStyle = `${styles.title} animated fadeInUp`;
+    let nameStyle = `${styles.title} animated fadeInDown`;
 
     let {
       title,
@@ -60,6 +73,7 @@ class HeaderSection extends Component {
           alt={title}
           src={background}
         />
+        <h1 className={nameStyle} style={{marginTop: this.state.marginTop}}>{title}</h1>
         {/* <div className={styles.overlaySet} id="overlaySet">
           <img className={overlayStyle1} alt="overlay1" src={overlay1} />
           <img className={overlayStyle2} alt="overlay2" src={overlay2} />
@@ -72,7 +86,6 @@ class HeaderSection extends Component {
           <img className={overlayStyle9} alt="overlay9" src={overlay9} />
         </div> */}
         <img className={profileStyle} alt={title} src={profilePic} />
-        <h1 className={nameStyle}>{title}</h1>
         <IntroText text={intro}/>
       </div>
     );

@@ -1,6 +1,7 @@
 .footer {
   color: #FFFFFF;
-  min-height: 45vh;
+  height: 45vh;
+  max-height: 75vw;
   overflow: hidden;
   padding: 24px;
   position: relative;
@@ -17,7 +18,7 @@
   z-index: -1; }
 
 .footerTitle {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 6vw;
   padding: 16px;
   text-align: center; }

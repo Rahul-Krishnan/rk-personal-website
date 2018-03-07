@@ -6,7 +6,7 @@
   padding: 4vw 0; }
 
 .sectionTitle {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 6vw;
   padding: 2.2vw;
   text-align: center; }
@@ -15,7 +15,7 @@
     cursor: pointer; }
 
 .sectionOpen {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Comfortaa', cursive;
   margin-top: -15vw; }
 
 .chart {
@@ -59,7 +59,7 @@
 .centerTitlePentagon {
   border-radius: 40vw;
   display: block;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 6vw;
   height: 40vw;
   line-height: 40vw;
@@ -117,7 +117,7 @@
       stroke-dashoffset: 1224px; } }
   .centerTitlePentagon {
     border-radius: 288px;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 43.2px;
     height: 288px;
     line-height: 288px;
