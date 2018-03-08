@@ -84,6 +84,7 @@ const data = {
       overlay8: overlay8,
       overlay9: overlay9,
       profilePic: profilePic,
+      top: "Rahul Krishnan",
       title: "Hi, I'm Rahul Krishnan",
       intro: {
         anchor: 'I am',

@@ -9,7 +9,7 @@ const NavBar = ({ sections, toggleTo, toggleToTop }) => (
         toggleToTop();
       }}
     >
-      {sections.header.title}
+      {sections.header.top}
     </span>
     <span
       className={styles.navbarItem}
