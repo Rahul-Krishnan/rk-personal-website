@@ -202,6 +202,18 @@ const data = {
       ],
     },
     // {
+    //   title: 'Tesla Control Center',
+    //   website: 'none yet',
+    //   repo: 'none yet',
+    //   date: 'May 2019',
+    //   image: Tesla,
+    //   homeImage: teslaHome,
+    //   bulletPoints: [
+    //     'Still working on it!',
+    //     'Still working on it!',
+    //   ],
+    // },
+    // {
     //   title: 'AR Kit',
     //   website: 'none yet',
     //   repo: 'none yet',
